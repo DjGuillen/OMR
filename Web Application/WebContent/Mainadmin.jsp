@@ -17,6 +17,7 @@
     <body>
         <div class="container">
             <div class="header">
+            <a href="LogIn.jsp"><strong>&laquo; Odjavi se</strong></a>
                 <span class="right">
                     <a href="http://tympanus.net/codrops/2011/10/24/creative-css3-animation-menus/"><strong>LOGOVANI STE KAO:</strong></a>
                 </span>
