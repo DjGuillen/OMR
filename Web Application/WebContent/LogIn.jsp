@@ -8,6 +8,59 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<%@page import="DAO.*" %>
+<%@page import="KLASE.*" %>
+<%@ page import="java.security.MessageDigest" %>
+<%@ page import="java.security.NoSuchAlgorithmException" %>
+<%@ page import="java.util.Formatter" %>
+<%@ page import="java.math.BigInteger" %>
+<%@ page import="java.sql.*" %>
+
+<%
+if (request.getParameter("submit")!=null){
+	
+	String username=request.getParameter("username");
+
+	Connection c=DAL.connect();	
+    Statement stmt = c.createStatement();
+    ResultSet rs;
+
+    rs = stmt.executeQuery("SELECT username FROM korisnici");
+      while ( rs.next() ) {
+        if(username.equals(rs.getString("username"))){
+        	try{
+        		MessageDigest cript = MessageDigest.getInstance("SHA-1");
+        	    cript.reset();
+        	    cript.update(request.getParameter("password").getBytes("utf8"));
+        	    String password=new BigInteger( 1, cript.digest() ).toString(16);	
+        		 
+        		    Statement stmt1 = c.createStatement();
+        		    ResultSet rs1;
+        		    
+        		    rs1 = stmt1.executeQuery("SELECT password FROM korisnici where username='" + username + "'");
+        		    rs1.next(); 
+        		    if(password.equals(rs1.getString(1))){
+        		    	out.println("Uspjesno ste logovani");
+        		    	response.sendRedirect("Main.jsp");
+        		    }
+        		    else{
+        		    	//Pogresna sifra
+        		    }
+       
+        		}
+        	    	
+        	    catch (NoSuchAlgorithmException e){
+        	    	//handle
+        	    }
+        	
+        }
+        else{
+        	//out.println("pogresno korisnicko ime");
+        }
+	}
+	
+}
+%>
 <div id="box">
 <div class="elements">
 <div class="avatar"></div>

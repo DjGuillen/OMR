@@ -8,7 +8,6 @@
 </head>
 <body>
 <h1>queX Suite on Windows with XAMPP</h1>
-<p>Default username is: admin Default password is: password Change it <a href="/quexs/admin/operatorlist.php?edit=1">here</a></p>
 <h3>queXML</h3>
 <p><a href="/quexml">Generate PDF from queXML document</a></p>
 <h3>queXS CATI</h3>
