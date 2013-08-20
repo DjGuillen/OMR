@@ -1,0 +1,33 @@
+To: adam.zammit@acspri.org.au
+Subject: Invitation to complete questionnaire online
+Date: Fri, 12 Apr 2013 06:40:53 +0200
+Return-Path: your-email@example.net
+From: Your Name <your-email@example.net>
+Reply-to: Your Name <your-email@example.net>
+Message-ID: <c9aea6dfc9c60bd3e3494b0a8924c570@localhost>
+X-Priority: 3
+X-Mailer: PHPMailer 5.1 (phpmailer.sourceforge.net)
+X-surveyid: 27626
+X-tokenid: zpuf8kfhit2cnp4
+X-Surveymailer: queXS Emailer (quexs.sourceforge.net)
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_c9aea6dfc9c60bd3e3494b0a8924c570"
+
+--b1_c9aea6dfc9c60bd3e3494b0a8924c570
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+
+Dear Adam,Thank you for requesting to complete this questionnaire online.----------------------------------------------Click here to complete the questionnaire:http://localhost/quexs/include/limesurvey/index.php?lang=en&sid=27626&token=zpuf8kfhit2cnp4If you do not want to participate in this survey and don't want to receive any more invitations please click the following link:http://localhost/quexs/include/limesurvey/optout.php?lang=en&sid=27626&token=zpuf8kfhit2cnp4
+
+
+--b1_c9aea6dfc9c60bd3e3494b0a8924c570
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+
+Dear Adam,<br /><br />Thank you for requesting to complete this questionnaire online.<br /><br />----------------------------------------------<br />Click here to complete the questionnaire:<br />http://localhost/quexs/include/limesurvey/index.php?lang=en&sid=27626&token=zpuf8kfhit2cnp4<br /><br />If you do not want to participate in this survey and don't want to receive any more invitations please click the following link:<br />http://localhost/quexs/include/limesurvey/optout.php?lang=en&sid=27626&token=zpuf8kfhit2cnp4
+
+
+
+--b1_c9aea6dfc9c60bd3e3494b0a8924c570--
+

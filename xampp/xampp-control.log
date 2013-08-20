@@ -1,0 +1,411 @@
+11:33:01 AM  [main] 	Initializing Control Panel
+11:33:01 AM  [main] 	Windows Version: Windows XP SP3 32-bit
+11:33:01 AM  [main] 	XAMPP Version: ???
+11:33:01 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+11:33:01 AM  [main] 	Running with Administrator rights - good!
+11:33:01 AM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+11:33:01 AM  [main] 	Checking for prerequisites
+11:33:01 AM  [main] 	Required XAMPP prerequisite not found!
+11:33:01 AM  [main] 	You do not appear to have the Microsoft Visual C++ 2008 Runtimes installed
+11:33:01 AM  [main] 	This is required for XAMPP to fully function
+11:33:01 AM  [main] 	http://www.microsoft.com/download/en/details.aspx?id=5582
+11:33:01 AM  [main] 	Initializing Modules
+11:33:01 AM  [main] 	The FileZilla module is disabled
+11:33:01 AM  [main] 	The Mercury module is disabled
+11:33:01 AM  [main] 	The Tomcat module is disabled
+11:33:01 AM  [main] 	Starting Check-Timer
+11:33:01 AM  [main] 	Control Panel Ready
+11:33:18 AM  [Apache] 	Attempting to start Apache app...
+11:33:18 AM  [Apache] 	Status change detected: running
+11:33:21 AM  [Apache] 	Status change detected: stopped
+11:33:21 AM  [Apache] 	Error: Apache shutdown unexpectedly.
+11:33:21 AM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+11:33:21 AM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+11:33:21 AM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+11:33:21 AM  [Apache] 	and the Windows Event Viewer for more clues
+11:33:25 AM  [mysql] 	Attempting to start MySQL app...
+11:33:26 AM  [mysql] 	Status change detected: running
+11:33:33 AM  [mysql] 	Attempting to stop MySQL (PID: 204)
+11:33:33 AM  [mysql] 	Status change detected: stopped
+11:34:32 AM  [Apache] 	Attempting to start Apache app...
+11:34:32 AM  [Apache] 	Status change detected: running
+11:34:37 AM  [mysql] 	Attempting to start MySQL app...
+11:34:37 AM  [mysql] 	Status change detected: running
+11:34:45 AM  [mysql] 	Attempting to stop MySQL (PID: 1424)
+11:34:45 AM  [mysql] 	Status change detected: stopped
+11:34:46 AM  [Apache] 	Attempting to stop Apache (PID: 3632)
+11:34:46 AM  [Apache] 	Attempting to stop Apache (PID: 3640)
+11:34:46 AM  [Apache] 	Status change detected: stopped
+11:34:48 AM  [main] 	Deinitializing Modules
+11:34:48 AM  [main] 	Deinitializing Control Panel
+
+11:35:30 AM  [main] 	Initializing Control Panel
+11:35:30 AM  [main] 	Windows Version: Windows XP SP3 32-bit
+11:35:30 AM  [main] 	XAMPP Version: ???
+11:35:30 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+11:35:30 AM  [main] 	Running with Administrator rights - good!
+11:35:30 AM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+11:35:30 AM  [main] 	Checking for prerequisites
+11:35:30 AM  [main] 	All prerequisites found
+11:35:30 AM  [main] 	Initializing Modules
+11:35:30 AM  [main] 	The FileZilla module is disabled
+11:35:30 AM  [main] 	The Mercury module is disabled
+11:35:30 AM  [main] 	The Tomcat module is disabled
+11:35:30 AM  [main] 	Starting Check-Timer
+11:35:30 AM  [main] 	Control Panel Ready
+11:35:33 AM  [Apache] 	Attempting to start Apache app...
+11:35:33 AM  [Apache] 	Status change detected: running
+11:35:35 AM  [mysql] 	Attempting to start MySQL app...
+11:35:35 AM  [mysql] 	Status change detected: running
+11:35:42 AM  [main] 	Deinitializing Modules
+11:35:42 AM  [main] 	Deinitializing Control Panel
+
+11:35:45 AM  [main] 	Initializing Control Panel
+11:35:45 AM  [main] 	Windows Version: Windows XP SP3 32-bit
+11:35:45 AM  [main] 	XAMPP Version: ???
+11:35:45 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+11:35:45 AM  [main] 	Running with Administrator rights - good!
+11:35:45 AM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+11:35:45 AM  [main] 	Checking for prerequisites
+11:35:45 AM  [main] 	All prerequisites found
+11:35:45 AM  [main] 	Initializing Modules
+11:35:45 AM  [Apache] 	XAMPP Apache is already running on port 80
+11:35:45 AM  [Apache] 	XAMPP Apache is already running on port 443
+11:35:45 AM  [mysql] 	XAMPP MySQL is already running on port 3306
+11:35:45 AM  [main] 	The FileZilla module is disabled
+11:35:45 AM  [main] 	The Mercury module is disabled
+11:35:45 AM  [main] 	The Tomcat module is disabled
+11:35:45 AM  [main] 	Starting Check-Timer
+11:35:45 AM  [main] 	Control Panel Ready
+11:35:51 AM  [mysql] 	Attempting to stop MySQL (PID: 3448)
+11:35:52 AM  [mysql] 	Status change detected: stopped
+11:35:55 AM  [Apache] 	Attempting to stop Apache (PID: 2144)
+11:35:55 AM  [Apache] 	Attempting to stop Apache (PID: 2548)
+11:35:55 AM  [Apache] 	Status change detected: stopped
+11:36:36 AM  [main] 	Deinitializing Modules
+11:36:36 AM  [main] 	Deinitializing Control Panel
+
+11:43:55 AM  [main] 	Initializing Control Panel
+11:43:55 AM  [main] 	Windows Version: Windows XP SP3 32-bit
+11:43:55 AM  [main] 	XAMPP Version: ???
+11:43:55 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+11:43:55 AM  [main] 	Running with Administrator rights - good!
+11:43:55 AM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+11:43:55 AM  [main] 	Checking for prerequisites
+11:43:55 AM  [main] 	All prerequisites found
+11:43:55 AM  [main] 	Initializing Modules
+11:43:55 AM  [main] 	The FileZilla module is disabled
+11:43:55 AM  [main] 	The Mercury module is disabled
+11:43:55 AM  [main] 	The Tomcat module is disabled
+11:43:55 AM  [main] 	Starting Check-Timer
+11:43:55 AM  [main] 	Control Panel Ready
+11:43:57 AM  [mysql] 	Attempting to start MySQL app...
+11:43:57 AM  [mysql] 	Status change detected: running
+11:44:01 AM  [Apache] 	Attempting to start Apache app...
+11:44:01 AM  [Apache] 	Status change detected: running
+11:48:02 AM  [mysql] 	Attempting to stop MySQL (PID: 1732)
+11:48:02 AM  [mysql] 	Status change detected: stopped
+11:48:04 AM  [mysql] 	Attempting to start MySQL app...
+11:48:04 AM  [mysql] 	Status change detected: running
+12:52:33 PM  [Apache] 	Attempting to stop Apache (PID: 1600)
+12:52:33 PM  [Apache] 	Attempting to stop Apache (PID: 612)
+12:52:33 PM  [Apache] 	Status change detected: stopped
+12:52:35 PM  [Apache] 	Attempting to start Apache app...
+12:52:35 PM  [Apache] 	Status change detected: running
+12:54:29 PM  [Apache] 	Attempting to stop Apache (PID: 3780)
+12:54:29 PM  [Apache] 	Attempting to stop Apache (PID: 2572)
+12:54:29 PM  [Apache] 	Status change detected: stopped
+12:54:30 PM  [Apache] 	Attempting to start Apache app...
+12:54:30 PM  [Apache] 	Status change detected: running
+2:30:06 PM  [Apache] 	Attempting to stop Apache (PID: 712)
+2:30:06 PM  [Apache] 	Attempting to stop Apache (PID: 312)
+2:30:06 PM  [Apache] 	Status change detected: stopped
+2:30:07 PM  [Apache] 	Attempting to start Apache app...
+2:30:08 PM  [Apache] 	Status change detected: running
+4:30:47 PM  [main] 	Deinitializing Modules
+4:30:47 PM  [main] 	Deinitializing Control Panel
+
+9:43:36 AM  [main] 	Initializing Control Panel
+9:43:36 AM  [main] 	Windows Version: Windows XP SP3 32-bit
+9:43:36 AM  [main] 	XAMPP Version: ???
+9:43:36 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+9:43:36 AM  [main] 	Running with Administrator rights - good!
+9:43:36 AM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+9:43:36 AM  [main] 	Checking for prerequisites
+9:43:36 AM  [main] 	All prerequisites found
+9:43:36 AM  [main] 	Initializing Modules
+9:43:36 AM  [main] 	The FileZilla module is disabled
+9:43:36 AM  [main] 	The Mercury module is disabled
+9:43:36 AM  [main] 	The Tomcat module is disabled
+9:43:36 AM  [main] 	Starting Check-Timer
+9:43:36 AM  [main] 	Control Panel Ready
+9:43:39 AM  [Apache] 	Attempting to start Apache app...
+9:43:39 AM  [mysql] 	Attempting to start MySQL app...
+9:43:40 AM  [mysql] 	Status change detected: running
+9:43:41 AM  [Apache] 	Status change detected: running
+9:44:13 AM  [Apache] 	Attempting to stop Apache (PID: 1836)
+9:44:13 AM  [Apache] 	Attempting to stop Apache (PID: 1784)
+9:44:14 AM  [Apache] 	Status change detected: stopped
+9:44:16 AM  [Apache] 	Attempting to start Apache app...
+9:44:16 AM  [Apache] 	Status change detected: running
+4:38:38 PM  [main] 	Deinitializing Modules
+4:38:38 PM  [main] 	Deinitializing Control Panel
+
+3:38:27 PM  [main] 	Initializing Control Panel
+3:38:27 PM  [main] 	Windows Version: Windows XP SP3 32-bit
+3:38:27 PM  [main] 	XAMPP Version: ???
+3:38:27 PM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+3:38:27 PM  [main] 	Running with Administrator rights - good!
+3:38:27 PM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+3:38:27 PM  [main] 	Checking for prerequisites
+3:38:27 PM  [main] 	All prerequisites found
+3:38:27 PM  [main] 	Initializing Modules
+3:38:27 PM  [main] 	The FileZilla module is disabled
+3:38:27 PM  [main] 	The Mercury module is disabled
+3:38:27 PM  [main] 	The Tomcat module is disabled
+3:38:27 PM  [main] 	Starting Check-Timer
+3:38:27 PM  [main] 	Control Panel Ready
+3:38:29 PM  [Apache] 	Attempting to start Apache app...
+3:38:30 PM  [mysql] 	Attempting to start MySQL app...
+3:38:31 PM  [Apache] 	Status change detected: running
+3:38:32 PM  [mysql] 	Status change detected: running
+4:38:16 PM  [main] 	Deinitializing Modules
+4:38:16 PM  [main] 	Deinitializing Control Panel
+
+9:40:42 AM  [main] 	Initializing Control Panel
+9:40:42 AM  [main] 	Windows Version: Windows XP SP3 32-bit
+9:40:42 AM  [main] 	XAMPP Version: ???
+9:40:42 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+9:40:42 AM  [main] 	Running with Administrator rights - good!
+9:40:42 AM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+9:40:42 AM  [main] 	Checking for prerequisites
+9:40:42 AM  [main] 	All prerequisites found
+9:40:42 AM  [main] 	Initializing Modules
+9:40:42 AM  [main] 	The FileZilla module is disabled
+9:40:42 AM  [main] 	The Mercury module is disabled
+9:40:42 AM  [main] 	The Tomcat module is disabled
+9:40:42 AM  [main] 	Starting Check-Timer
+9:40:42 AM  [main] 	Control Panel Ready
+9:40:43 AM  [Apache] 	Attempting to start Apache app...
+9:40:45 AM  [Apache] 	Status change detected: running
+9:40:48 AM  [mysql] 	Attempting to start MySQL app...
+9:40:48 AM  [mysql] 	Status change detected: running
+4:26:20 PM  [mysql] 	Attempting to stop MySQL (PID: 2416)
+4:26:20 PM  [mysql] 	Status change detected: stopped
+4:26:23 PM  [Apache] 	Attempting to stop Apache (PID: 1444)
+4:26:23 PM  [Apache] 	Attempting to stop Apache (PID: 1336)
+4:26:23 PM  [Apache] 	Status change detected: stopped
+4:26:45 PM  [main] 	Deinitializing Modules
+4:26:45 PM  [main] 	Deinitializing Control Panel
+
+2:21:33 PM  [main] 	Initializing Control Panel
+2:21:33 PM  [main] 	Windows Version: Windows XP SP3 32-bit
+2:21:33 PM  [main] 	XAMPP Version: ???
+2:21:33 PM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+2:21:33 PM  [main] 	Running with Administrator rights - good!
+2:21:33 PM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+2:21:33 PM  [main] 	Checking for prerequisites
+2:21:33 PM  [main] 	All prerequisites found
+2:21:33 PM  [main] 	Initializing Modules
+2:21:33 PM  [Apache] 	XAMPP Apache is already running on port 80
+2:21:33 PM  [Apache] 	XAMPP Apache is already running on port 443
+2:21:33 PM  [mysql] 	XAMPP MySQL is already running on port 3306
+2:21:33 PM  [main] 	The FileZilla module is disabled
+2:21:33 PM  [main] 	The Mercury module is disabled
+2:21:33 PM  [main] 	The Tomcat module is disabled
+2:21:33 PM  [main] 	Starting Check-Timer
+2:21:33 PM  [main] 	Control Panel Ready
+2:26:26 PM  [mysql] 	Status change detected: stopped
+2:26:26 PM  [mysql] 	Error: MySQL shutdown unexpectedly.
+2:26:26 PM  [mysql] 	This may be due to a blocked port, missing dependencies, 
+2:26:26 PM  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+2:26:26 PM  [mysql] 	Check the "/xampp/mysql/data/mysql_error.log" file
+2:26:26 PM  [mysql] 	and the Windows Event Viewer for more clues
+2:26:28 PM  [Apache] 	Status change detected: stopped
+2:26:28 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+2:26:28 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+2:26:28 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+2:26:28 PM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+2:26:28 PM  [Apache] 	and the Windows Event Viewer for more clues
+2:33:38 PM  [mysql] 	Attempting to start MySQL app...
+2:33:38 PM  [mysql] 	Status change detected: running
+2:33:38 PM  [Apache] 	Attempting to start Apache app...
+2:33:39 PM  [Apache] 	Status change detected: running
+2:37:00 PM  [mysql] 	Attempting to stop MySQL (PID: 2064)
+2:37:00 PM  [mysql] 	Status change detected: stopped
+2:37:01 PM  [Apache] 	Attempting to stop Apache (PID: 1356)
+2:37:01 PM  [Apache] 	Attempting to stop Apache (PID: 1216)
+2:37:01 PM  [Apache] 	Status change detected: stopped
+2:38:09 PM  [main] 	Deinitializing Modules
+2:38:09 PM  [main] 	Deinitializing Control Panel
+
+2:39:59 PM  [main] 	Initializing Control Panel
+2:39:59 PM  [main] 	Windows Version: Windows XP SP3 32-bit
+2:39:59 PM  [main] 	XAMPP Version: ???
+2:39:59 PM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+2:39:59 PM  [main] 	Running with Administrator rights - good!
+2:39:59 PM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+2:39:59 PM  [main] 	Checking for prerequisites
+2:39:59 PM  [main] 	All prerequisites found
+2:39:59 PM  [main] 	Initializing Modules
+2:39:59 PM  [main] 	The FileZilla module is disabled
+2:39:59 PM  [main] 	The Mercury module is disabled
+2:39:59 PM  [main] 	The Tomcat module is disabled
+2:39:59 PM  [main] 	Starting Check-Timer
+2:39:59 PM  [main] 	Control Panel Ready
+2:40:03 PM  [mysql] 	Attempting to start MySQL app...
+2:40:03 PM  [mysql] 	Status change detected: running
+2:40:03 PM  [Apache] 	Attempting to start Apache app...
+2:40:04 PM  [Apache] 	Status change detected: running
+2:42:13 PM  [mysql] 	Attempting to stop MySQL (PID: 3760)
+2:42:13 PM  [mysql] 	Status change detected: stopped
+2:42:14 PM  [Apache] 	Attempting to stop Apache (PID: 1432)
+2:42:14 PM  [Apache] 	Attempting to stop Apache (PID: 1208)
+2:42:14 PM  [Apache] 	Status change detected: stopped
+2:44:13 PM  [main] 	Deinitializing Modules
+2:44:13 PM  [main] 	Deinitializing Control Panel
+
+3:24:46 AM  [main] 	Initializing Control Panel
+3:24:46 AM  [main] 	Windows Version: Windows 7 Professional SP1 64-bit
+3:24:46 AM  [main] 	XAMPP Version: ???
+3:24:46 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+3:24:46 AM  [main] 	Running with Administrator rights - good!
+3:24:46 AM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+3:24:46 AM  [main] 	Checking for prerequisites
+3:24:47 AM  [main] 	All prerequisites found
+3:24:47 AM  [main] 	Initializing Modules
+3:24:47 AM  [main] 	The FileZilla module is disabled
+3:24:47 AM  [main] 	The Mercury module is disabled
+3:24:47 AM  [main] 	The Tomcat module is disabled
+3:24:47 AM  [main] 	Starting Check-Timer
+3:24:47 AM  [main] 	Control Panel Ready
+3:24:50 AM  [Apache] 	Attempting to start Apache app...
+3:24:51 AM  [Apache] 	Status change detected: running
+3:24:53 AM  [mysql] 	Attempting to start MySQL app...
+3:24:53 AM  [mysql] 	Status change detected: running
+3:51:48 AM  [Apache] 	Attempting to stop Apache (PID: 161364)
+3:51:48 AM  [Apache] 	Attempting to stop Apache (PID: 162660)
+3:51:48 AM  [Apache] 	Status change detected: stopped
+3:51:49 AM  [Apache] 	Attempting to start Apache app...
+3:51:49 AM  [Apache] 	Status change detected: running
+3:52:04 AM  [mysql] 	Attempting to stop MySQL (PID: 147548)
+3:52:04 AM  [mysql] 	Status change detected: stopped
+3:52:05 AM  [Apache] 	Attempting to stop Apache (PID: 174268)
+3:52:05 AM  [Apache] 	Attempting to stop Apache (PID: 174040)
+3:52:05 AM  [Apache] 	Status change detected: stopped
+3:52:13 AM  [main] 	Deinitializing Modules
+3:52:13 AM  [main] 	Deinitializing Control Panel
+
+3:52:22 AM  [main] 	Initializing Control Panel
+3:52:22 AM  [main] 	Windows Version: Windows 7 Professional SP1 64-bit
+3:52:22 AM  [main] 	XAMPP Version: ???
+3:52:22 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+3:52:22 AM  [main] 	Running with Administrator rights - good!
+3:52:22 AM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+3:52:22 AM  [main] 	Checking for prerequisites
+3:52:22 AM  [main] 	All prerequisites found
+3:52:22 AM  [main] 	Initializing Modules
+3:52:22 AM  [mysql] 	Problem detected!
+3:52:22 AM  [mysql] 	Port 3306 in use by "c:\xampp\xampp-control.exe"!
+3:52:22 AM  [mysql] 	MySQL WILL NOT start without the configured ports free!
+3:52:22 AM  [mysql] 	You need to uninstall/disable/reconfigure the blocking application
+3:52:22 AM  [mysql] 	or reconfigure MySQL to listen on a different port
+3:52:22 AM  [main] 	The FileZilla module is disabled
+3:52:22 AM  [main] 	The Mercury module is disabled
+3:52:22 AM  [main] 	The Tomcat module is disabled
+3:52:22 AM  [main] 	Starting Check-Timer
+3:52:22 AM  [main] 	Control Panel Ready
+3:52:24 AM  [Apache] 	Attempting to start Apache app...
+3:52:24 AM  [Apache] 	Status change detected: running
+3:52:26 AM  [mysql] 	Attempting to start MySQL app...
+3:52:26 AM  [mysql] 	Status change detected: running
+3:56:41 AM  [Apache] 	Attempting to stop Apache (PID: 174632)
+3:56:41 AM  [Apache] 	Attempting to stop Apache (PID: 175080)
+3:56:41 AM  [Apache] 	Status change detected: stopped
+3:56:42 AM  [mysql] 	Attempting to stop MySQL (PID: 175020)
+3:56:42 AM  [mysql] 	Status change detected: stopped
+3:56:47 AM  [main] 	Deinitializing Modules
+3:56:47 AM  [main] 	Deinitializing Control Panel
+
+3:55:26 PM  [main] 	Initializing Control Panel
+3:55:26 PM  [main] 	Windows Version: Windows 7 Professional SP1 64-bit
+3:55:26 PM  [main] 	XAMPP Version: ???
+3:55:26 PM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+3:55:26 PM  [main] 	Running with Administrator rights - good!
+3:55:26 PM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+3:55:26 PM  [main] 	Checking for prerequisites
+3:55:26 PM  [main] 	All prerequisites found
+3:55:26 PM  [main] 	Initializing Modules
+3:55:26 PM  [Apache] 	Problem detected!
+3:55:26 PM  [Apache] 	Port 80 in use by "unknown program"!
+3:55:26 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+3:55:26 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+3:55:26 PM  [Apache] 	or reconfigure Apache to listen on a different port
+3:55:26 PM  [Apache] 	Problem detected!
+3:55:26 PM  [Apache] 	Port 443 in use by "unknown program"!
+3:55:26 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+3:55:26 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+3:55:26 PM  [Apache] 	or reconfigure Apache to listen on a different port
+3:55:26 PM  [mysql] 	XAMPP MySQL is already running on port 3306
+3:55:26 PM  [main] 	The FileZilla module is disabled
+3:55:26 PM  [main] 	The Mercury module is disabled
+3:55:26 PM  [main] 	The Tomcat module is disabled
+3:55:26 PM  [main] 	Starting Check-Timer
+3:55:26 PM  [main] 	Control Panel Ready
+6:35:16 AM  [main] 	Deinitializing Modules
+6:35:16 AM  [main] 	Deinitializing Control Panel
+
+3:38:36 PM  [main] 	Initializing Control Panel
+3:38:36 PM  [main] 	Windows Version: Windows 7 Professional SP1 64-bit
+3:38:36 PM  [main] 	XAMPP Version: ???
+3:38:36 PM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+3:38:36 PM  [main] 	Running with Administrator rights - good!
+3:38:36 PM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+3:38:36 PM  [main] 	Checking for prerequisites
+3:38:36 PM  [main] 	All prerequisites found
+3:38:36 PM  [main] 	Initializing Modules
+3:38:36 PM  [main] 	The FileZilla module is disabled
+3:38:36 PM  [main] 	The Mercury module is disabled
+3:38:36 PM  [main] 	The Tomcat module is disabled
+3:38:36 PM  [main] 	Starting Check-Timer
+3:38:36 PM  [main] 	Control Panel Ready
+3:38:38 PM  [Apache] 	Attempting to start Apache app...
+3:38:40 PM  [Apache] 	Status change detected: running
+3:38:41 PM  [mysql] 	Attempting to start MySQL app...
+3:38:45 PM  [mysql] 	Status change detected: running
+3:54:16 PM  [Apache] 	Attempting to stop Apache (PID: 42244)
+3:54:17 PM  [Apache] 	Status change detected: stopped
+3:54:18 PM  [Apache] 	Attempting to start Apache app...
+3:54:18 PM  [Apache] 	Status change detected: running
+3:54:19 PM  [Apache] 	Status change detected: stopped
+3:54:19 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+3:54:19 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+3:54:19 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+3:54:19 PM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+3:54:19 PM  [Apache] 	and the Windows Event Viewer for more clues
+3:54:42 PM  [Apache] 	Attempting to start Apache app...
+3:54:43 PM  [Apache] 	Status change detected: running
+3:54:43 PM  [Apache] 	Status change detected: stopped
+3:54:43 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+3:54:43 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+3:54:43 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+3:54:43 PM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+3:54:43 PM  [Apache] 	and the Windows Event Viewer for more clues
+3:54:50 PM  [Apache] 	Attempting to start Apache app...
+3:54:50 PM  [Apache] 	Status change detected: running
+3:54:51 PM  [Apache] 	Status change detected: stopped
+3:54:51 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+3:54:51 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+3:54:51 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+3:54:51 PM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+3:54:51 PM  [Apache] 	and the Windows Event Viewer for more clues
+5:25:23 AM  [Apache] 	Status change detected: running
+5:25:24 AM  [Apache] 	Status change detected: stopped
+5:25:24 AM  [Apache] 	Error: Apache shutdown unexpectedly.
+5:25:24 AM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+5:25:24 AM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+5:25:24 AM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+5:25:24 AM  [Apache] 	and the Windows Event Viewer for more clues
+6:35:16 AM  [main] 	Deinitializing Modules
+6:35:16 AM  [main] 	Deinitializing Control Panel
+

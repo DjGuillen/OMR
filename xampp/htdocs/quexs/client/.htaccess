@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "queX Suite: Authentication Required"
+AuthUserFile ..\security\quex.htpasswd
+AuthGroupFile ..\security\quex.htgroup
+require group clients

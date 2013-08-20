@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire id="27626">
+  <title>Test questionnaire</title>
+  <investigator/>
+  <dataCollector/>
+  <section id="1">
+    <sectionInfo>
+      <position>title</position>
+      <text>Test Section</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Test question 1</text>
+      <response varName="27626X1X1">
+        <free>
+          <format>text</format>
+          <length>24</length>
+          <label></label>
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Test question 2</text>
+      <response varName="27626X1X2">
+        <fixed>
+          <category>
+            <label>Option 1</label>
+            <value>1</value>
+          </category>
+          <category>
+            <label>Option 2</label>
+            <value>2</value>
+          </category>
+          <category>
+            <label>Option 3</label>
+            <value>3</value>
+          </category>
+          <category>
+            <label>Option 4</label>
+            <value>4</value>
+          </category>
+          <category>
+            <label>Option 5</label>
+            <value>5</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+  </section>
+  <section id="2">
+    <sectionInfo>
+      <position>title</position>
+      <text>Test Section 2</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Test question 1 in section 2</text>
+      <subQuestion varName="27626X2X3SQ001">
+        <text>Sub question 1</text>
+      </subQuestion>
+      <subQuestion varName="27626X2X3SQ002">
+        <text>Sub question 2</text>
+      </subQuestion>
+      <subQuestion varName="27626X2X3SQ003">
+        <text>Sub question 3</text>
+      </subQuestion>
+      <response varName="27626X2X3">
+        <fixed>
+          <category>
+            <label>Option 1</label>
+            <value>1</value>
+          </category>
+          <category>
+            <label>Option 2</label>
+            <value>2</value>
+          </category>
+          <category>
+            <label>Option 3</label>
+            <value>3</value>
+          </category>
+          <category>
+            <label>Option 4</label>
+            <value>4</value>
+          </category>
+          <category>
+            <label>Option 5</label>
+            <value>5</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+  </section>
+</questionnaire>

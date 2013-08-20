@@ -1,0 +1,169 @@
+[08-Apr-2013 01:44:08 UTC] PHP Warning:  file_get_contents(lang.tmp): failed to open stream: No such file or directory in C:\xampp\htdocs\xampp\index.php on line 2
+[08-Apr-2013 02:52:40 UTC] PHP Warning:  include_once(C:\xampp\htdocs\quexf..\quexs\include\limesurvey\classes\adodbadodb.inc.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexf\db.inc.php on line 30
+[08-Apr-2013 02:52:40 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\quexf..\quexs\include\limesurvey\classes\adodbadodb.inc.php' for inclusion (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexf\db.inc.php on line 30
+[08-Apr-2013 02:52:40 UTC] PHP Fatal error:  Call to undefined function newADOConnection() in C:\xampp\htdocs\quexf\db.inc.php on line 41
+[08-Apr-2013 02:53:05 UTC] PHP Warning:  include_once(C:\xampp\htdocs\quexf..\quexs\include\limesurvey\classes\adodb\adodb.inc.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexf\db.inc.php on line 30
+[08-Apr-2013 02:53:05 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\quexf..\quexs\include\limesurvey\classes\adodb\adodb.inc.php' for inclusion (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexf\db.inc.php on line 30
+[08-Apr-2013 02:53:05 UTC] PHP Fatal error:  Call to undefined function newADOConnection() in C:\xampp\htdocs\quexf\db.inc.php on line 41
+[08-Apr-2013 02:55:22 UTC] PHP Warning:  Creating default object from empty value in C:\xampp\htdocs\quexc\include\php-gettext-1.0.7\gettext.inc on line 156
+[08-Apr-2013 04:27:03 UTC] PHP Warning:  Creating default object from empty value in C:\xampp\htdocs\quexc\include\php-gettext-1.0.7\gettext.inc on line 156
+[08-Apr-2013 04:27:10 UTC] PHP Warning:  Creating default object from empty value in C:\xampp\htdocs\quexc\include\php-gettext-1.0.7\gettext.inc on line 156
+[08-Apr-2013 04:27:10 UTC] PHP Warning:  include_once(C:\xampp\htdocs\quexc/../adodb/adodb.inc.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexc\db.inc.php on line 42
+[08-Apr-2013 04:27:10 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\quexc/../adodb/adodb.inc.php' for inclusion (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexc\db.inc.php on line 42
+[08-Apr-2013 04:27:10 UTC] PHP Warning:  include_once(C:\xampp\htdocs\quexc/../adodb/session/adodb-session2.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexc\db.inc.php on line 50
+[08-Apr-2013 04:27:10 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\quexc/../adodb/session/adodb-session2.php' for inclusion (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexc\db.inc.php on line 50
+[08-Apr-2013 04:27:10 UTC] PHP Fatal error:  Call to undefined function newADOConnection() in C:\xampp\htdocs\quexc\db.inc.php on line 56
+[08-Apr-2013 04:28:33 UTC] PHP Warning:  Creating default object from empty value in C:\xampp\htdocs\quexc\include\php-gettext-1.0.7\gettext.inc on line 156
+[08-Apr-2013 04:28:33 UTC] PHP Warning:  include_once(C:\xampp\htdocs\quexc/../adodb/adodb.inc.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexc\db.inc.php on line 42
+[08-Apr-2013 04:28:33 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\quexc/../adodb/adodb.inc.php' for inclusion (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexc\db.inc.php on line 42
+[08-Apr-2013 04:28:33 UTC] PHP Warning:  include_once(C:\xampp\htdocs\quexc/../adodb/session/adodb-session2.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexc\db.inc.php on line 50
+[08-Apr-2013 04:28:33 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\quexc/../adodb/session/adodb-session2.php' for inclusion (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexc\db.inc.php on line 50
+[08-Apr-2013 04:28:33 UTC] PHP Fatal error:  Call to undefined function newADOConnection() in C:\xampp\htdocs\quexc\db.inc.php on line 56
+[08-Apr-2013 04:28:45 UTC] PHP Warning:  Creating default object from empty value in C:\xampp\htdocs\quexc\include\php-gettext-1.0.7\gettext.inc on line 156
+[08-Apr-2013 04:28:45 UTC] PHP Warning:  include_once(C:\xampp\htdocs\quexc/../adodb/adodb.inc.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexc\db.inc.php on line 42
+[08-Apr-2013 04:28:45 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\quexc/../adodb/adodb.inc.php' for inclusion (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexc\db.inc.php on line 42
+[08-Apr-2013 04:28:45 UTC] PHP Warning:  include_once(C:\xampp\htdocs\quexc/../adodb/session/adodb-session2.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexc\db.inc.php on line 50
+[08-Apr-2013 04:28:45 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\quexc/../adodb/session/adodb-session2.php' for inclusion (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexc\db.inc.php on line 50
+[08-Apr-2013 04:28:45 UTC] PHP Fatal error:  Call to undefined function newADOConnection() in C:\xampp\htdocs\quexc\db.inc.php on line 56
+[08-Apr-2013 04:29:22 UTC] PHP Warning:  Creating default object from empty value in C:\xampp\htdocs\quexc\include\php-gettext-1.0.7\gettext.inc on line 156
+[08-Apr-2013 04:29:22 UTC] PHP Fatal error:  Call to undefined function pspell_config_create() in C:\xampp\htdocs\quexc\functions\functions.spelling.php on line 41
+[08-Apr-2013 04:30:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_pspell.dll' - The specified module could not be found.
+ in Unknown on line 0
+[08-Apr-2013 04:30:15 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_pspell.dll' - The specified module could not be found.
+ in Unknown on line 0
+[08-Apr-2013 06:17:14 UTC] PHP Warning:  Creating default object from empty value in C:\xampp\htdocs\quexc\include\php-gettext-1.0.7\gettext.inc on line 156
+[08-Apr-2013 23:43:46 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_pspell.dll' - The specified module could not be found.
+ in Unknown on line 0
+[08-Apr-2013 23:43:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_pspell.dll' - The specified module could not be found.
+ in Unknown on line 0
+[08-Apr-2013 23:53:16 UTC] PHP Fatal error:  Call to undefined function browser_ie() in C:\xampp\htdocs\quexc\functions\functions.xhtml.php on line 201
+[10-Apr-2013 23:42:55 UTC] PHP Warning:  require_once(/var/lib/tcpdf/config/lang/eng.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexml\quexmlpdf.php on line 7
+[10-Apr-2013 23:42:55 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/lib/tcpdf/config/lang/eng.php' (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexml\quexmlpdf.php on line 7
+[10-Apr-2013 23:44:12 UTC] PHP Warning:  require_once(C:\xampp\htdocs\quexml../quexs/include/limesurvey/classes/tcpdf/config/lang/eng.php): failed to open stream: No such file or directory in C:\xampp\htdocs\quexml\quexmlpdf.php on line 7
+[10-Apr-2013 23:44:12 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\quexml../quexs/include/limesurvey/classes/tcpdf/config/lang/eng.php' (include_path='.;\xampp\php\PEAR') in C:\xampp\htdocs\quexml\quexmlpdf.php on line 7
+[10-Apr-2013 23:45:01 UTC] PHP Notice:  Undefined variable: imagedir in C:\xampp\htdocs\quexs\include\limesurvey\admin\classes\tcpdf\config\tcpdf_config.php on line 97
+[10-Apr-2013 23:48:31 UTC] FAILED in get_case_id for case 
+[10-Apr-2013 23:48:31 UTC] FAILED in get_case_id for case 
+[10-Apr-2013 23:49:26 UTC] PHP Fatal error:  Call to undefined function pspell_config_create() in C:\xampp\htdocs\quexc\functions\functions.spelling.php on line 41
+[11-Apr-2013 04:15:34 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 04:20:00 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 04:20:00 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 142
+[11-Apr-2013 04:20:00 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 147
+[11-Apr-2013 04:20:00 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexs\lang.inc.php on line 53
+[11-Apr-2013 04:23:07 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 05:10:04 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 05:10:28 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 05:10:28 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 142
+[11-Apr-2013 05:10:28 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 147
+[11-Apr-2013 05:10:28 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexs\lang.inc.php on line 53
+[11-Apr-2013 06:01:37 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:02:05 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:02:05 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 142
+[11-Apr-2013 06:02:05 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 147
+[11-Apr-2013 06:02:05 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexs\lang.inc.php on line 53
+[11-Apr-2013 06:08:29 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:09:47 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:14:26 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:15:21 UTC] PHP Parse error:  syntax error, unexpected '$args' (T_VARIABLE) in C:\xampp\htdocs\quexs\functions\functions.process.php on line 120
+[11-Apr-2013 06:15:42 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:16:21 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:16:21 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 142
+[11-Apr-2013 06:16:21 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 147
+[11-Apr-2013 06:16:21 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexs\lang.inc.php on line 53
+[11-Apr-2013 06:19:04 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:19:04 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 142
+[11-Apr-2013 06:19:04 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 147
+[11-Apr-2013 06:19:04 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexs\lang.inc.php on line 53
+[11-Apr-2013 06:21:24 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:21:24 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 142
+[11-Apr-2013 06:21:24 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 147
+[11-Apr-2013 06:21:24 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexs\lang.inc.php on line 53
+[11-Apr-2013 06:22:43 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:22:43 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 142
+[11-Apr-2013 06:22:43 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 147
+[11-Apr-2013 06:22:43 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexs\lang.inc.php on line 53
+[11-Apr-2013 06:23:17 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[11-Apr-2013 06:23:17 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 142
+[11-Apr-2013 06:23:17 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 147
+[11-Apr-2013 06:23:17 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexs\lang.inc.php on line 53
+[11-Apr-2013 06:25:05 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexf\lang.inc.php on line 53
+[11-Apr-2013 06:25:05 UTC] PHP Notice:  Use of undefined constant DEFAULT_LOCALE - assumed 'DEFAULT_LOCALE' in C:\xampp\htdocs\quexf\lang.inc.php on line 54
+[12-Apr-2013 00:33:06 UTC] PHP Fatal error:  Call to undefined function pspell_config_create() in C:\xampp\htdocs\quexc\functions\functions.spelling.php on line 41
+[12-Apr-2013 00:35:03 UTC] PHP Warning:  Missing argument 2 for p(), called in C:\xampp\htdocs\quexc\endwork.php on line 55 and defined in C:\xampp\htdocs\quexc\functions\functions.xhtml.php on line 91
+[12-Apr-2013 00:35:03 UTC] PHP Notice:  Undefined variable: tag in C:\xampp\htdocs\quexc\functions\functions.xhtml.php on line 93
+[12-Apr-2013 00:35:03 UTC] PHP Notice:  Undefined variable: tag in C:\xampp\htdocs\quexc\functions\functions.xhtml.php on line 93
+[12-Apr-2013 00:37:10 UTC] FAILED in get_case_id for case 
+[12-Apr-2013 00:37:10 UTC] FAILED in get_case_id for case 
+[12-Apr-2013 00:39:37 UTC] FAILED in get_case_id for case 
+[12-Apr-2013 00:39:37 UTC] FAILED in get_case_id for case 
+[12-Apr-2013 01:25:25 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexf\lang.inc.php on line 53
+[12-Apr-2013 01:25:25 UTC] PHP Notice:  Use of undefined constant DEFAULT_LOCALE - assumed 'DEFAULT_LOCALE' in C:\xampp\htdocs\quexf\lang.inc.php on line 54
+[12-Apr-2013 01:26:00 UTC] PHP Notice:  Undefined index: qid in C:\xampp\htdocs\quexf\verifyjs.php on line 195
+[12-Apr-2013 01:26:00 UTC] PHP Notice:  Undefined index: description in C:\xampp\htdocs\quexf\verifyjs.php on line 196
+[12-Apr-2013 01:28:08 UTC] PHP Notice:  Undefined index: uid in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 148
+[12-Apr-2013 01:36:36 UTC] PHP Notice:  Undefined index: PHP_AUTH_USER in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 137
+[12-Apr-2013 01:36:36 UTC] PHP Notice:  Undefined index: PHP_AUTH_USER in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 137
+[12-Apr-2013 01:36:36 UTC] XML-RPC: xmlrpcmsg::parseResponseHeaders: errors occurred when trying to decode the deflated data received from server
+[12-Apr-2013 01:36:56 UTC] PHP Notice:  Undefined index: PHP_AUTH_USER in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 137
+[12-Apr-2013 01:36:56 UTC] PHP Notice:  Undefined index: PHP_AUTH_USER in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 137
+[12-Apr-2013 01:36:56 UTC] XML-RPC: xmlrpcmsg::parseResponseHeaders: errors occurred when trying to decode the deflated data received from server
+[12-Apr-2013 01:38:18 UTC] PHP Notice:  Undefined index: uid in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 148
+[12-Apr-2013 01:38:20 UTC] PHP Notice:  Undefined index: uid in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 148
+[12-Apr-2013 02:07:40 UTC] PHP Notice:  Undefined index: code_id in C:\xampp\htdocs\quexc\functions\functions.work.php on line 938
+[12-Apr-2013 02:07:40 UTC] PHP Notice:  Undefined index: blank_code_id in C:\xampp\htdocs\quexc\functions\functions.work.php on line 938
+[12-Apr-2013 02:15:50 UTC] PHP Notice:  Undefined index: SERVER_PORT in C:\xampp\htdocs\quexs\config.default.php on line 134
+[12-Apr-2013 02:15:50 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 142
+[12-Apr-2013 02:15:50 UTC] PHP Notice:  Undefined index: SERVER_NAME in C:\xampp\htdocs\quexs\config.default.php on line 147
+[12-Apr-2013 02:15:50 UTC] PHP Notice:  Undefined index: HTTP_ACCEPT_LANGUAGE in C:\xampp\htdocs\quexs\lang.inc.php on line 53
+[19-Aug-2013 01:38:10 UTC] PHP Notice:  Undefined index: uid in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 148
+[19-Aug-2013 01:38:24 UTC] PHP Notice:  Undefined index: uid in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 148
+[19-Aug-2013 01:38:35 UTC] PHP Notice:  Undefined index: uid in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 148
+[19-Aug-2013 01:38:52 UTC] PHP Notice:  Undefined index: uid in C:\xampp\htdocs\quexs\include\limesurvey\admin\remotecontrol.php on line 148
+[19-Aug-2013 14:19:44 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\index.php on line 62
+[19-Aug-2013 14:59:41 UTC] PHP Notice:  Undefined index: name in C:\xampp\htdocs\main.php on line 24
+[19-Aug-2013 14:59:57 UTC] PHP Notice:  Undefined index: name in C:\xampp\htdocs\main.php on line 24
+[19-Aug-2013 15:27:05 UTC] PHP Notice:  Undefined variable: _SESSION in C:\xampp\htdocs\main.php on line 17
+[19-Aug-2013 15:27:13 UTC] PHP Notice:  Undefined variable: _SESSION in C:\xampp\htdocs\main.php on line 17
+[19-Aug-2013 15:27:15 UTC] PHP Notice:  Undefined variable: _SESSION in C:\xampp\htdocs\main.php on line 17
+[19-Aug-2013 15:31:55 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 18
+[19-Aug-2013 15:31:58 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 18
+[19-Aug-2013 15:31:59 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 18
+[19-Aug-2013 15:32:00 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 18
+[19-Aug-2013 15:34:19 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 23
+[19-Aug-2013 15:34:25 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 23
+[19-Aug-2013 15:34:36 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 23
+[19-Aug-2013 15:34:36 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 23
+[19-Aug-2013 15:34:46 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 23
+[19-Aug-2013 15:35:02 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 18
+[19-Aug-2013 15:35:02 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 24
+[19-Aug-2013 15:35:09 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 24
+[19-Aug-2013 15:35:28 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 18
+[19-Aug-2013 15:37:22 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 18
+[19-Aug-2013 15:38:23 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 18
+[19-Aug-2013 15:42:25 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 18
+[20-Aug-2013 00:47:02 UTC] PHP Parse error:  syntax error, unexpected ';' in C:\xampp\htdocs\quexf\admin\index.php on line 31
+[20-Aug-2013 00:48:38 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\quexf\functions\functions.xhtml.php on line 66
+[20-Aug-2013 00:51:52 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\quexf\functions\functions.xhtml.php on line 52
+[20-Aug-2013 00:52:13 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\quexf\functions\functions.xhtml.php on line 52
+[20-Aug-2013 00:52:13 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\quexf\functions\functions.xhtml.php on line 52
+[20-Aug-2013 11:26:08 UTC] PHP Notice:  Undefined variable: username in C:\xampp\htdocs\main.php on line 21
+[20-Aug-2013 11:27:07 UTC] PHP Notice:  Undefined index: username in C:\xampp\htdocs\main.php on line 15
+[20-Aug-2013 13:35:27 UTC] PHP Notice:  Undefined variable: _username in C:\xampp\htdocs\main.php on line 24
+[20-Aug-2013 13:35:45 UTC] PHP Notice:  Undefined variable: _username in C:\xampp\htdocs\main.php on line 24
+[20-Aug-2013 14:11:55 UTC] PHP Notice:  Undefined index: bgid in C:\xampp\htdocs\quexf\admin\bandajax.php on line 435
+[20-Aug-2013 14:11:56 UTC] PHP Notice:  Undefined index: bgid in C:\xampp\htdocs\quexf\admin\bandajax.php on line 435
+[20-Aug-2013 14:12:04 UTC] PHP Notice:  Undefined index: bgid in C:\xampp\htdocs\quexf\admin\bandajax.php on line 435
+[20-Aug-2013 14:12:07 UTC] PHP Notice:  Undefined index: bgid in C:\xampp\htdocs\quexf\admin\bandajax.php on line 435
+[20-Aug-2013 14:14:26 UTC] PHP Notice:  Undefined index: bgid in C:\xampp\htdocs\quexf\admin\bandajax.php on line 435
+[20-Aug-2013 15:31:10 UTC] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 60: parser error : Opening and ending tag mismatch: questionnaire line 2 and section in C:\xampp\htdocs\quexml\quexmlpdf.php on line 1314
+[20-Aug-2013 15:31:10 UTC] PHP Warning:  SimpleXMLElement::__construct():   &lt;/section&gt; in C:\xampp\htdocs\quexml\quexmlpdf.php on line 1314
+[20-Aug-2013 15:31:10 UTC] PHP Warning:  SimpleXMLElement::__construct():             ^ in C:\xampp\htdocs\quexml\quexmlpdf.php on line 1314
+[20-Aug-2013 15:31:10 UTC] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 61: parser error : Extra content at the end of the document in C:\xampp\htdocs\quexml\quexmlpdf.php on line 1314
+[20-Aug-2013 15:31:10 UTC] PHP Warning:  SimpleXMLElement::__construct(): &lt;/questionnaire&gt; in C:\xampp\htdocs\quexml\quexmlpdf.php on line 1314
+[20-Aug-2013 15:31:10 UTC] PHP Warning:  SimpleXMLElement::__construct(): ^ in C:\xampp\htdocs\quexml\quexmlpdf.php on line 1314
+[20-Aug-2013 15:31:10 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in C:\xampp\htdocs\quexml\quexmlpdf.php:1314
+Stack trace:
+#0 C:\xampp\htdocs\quexml\quexmlpdf.php(1314): SimpleXMLElement->__construct('<?xml version="...')
+#1 C:\xampp\htdocs\quexml\index.php(33): queXMLPDF->createqueXML('<?xml version="...')
+#2 {main}
+  thrown in C:\xampp\htdocs\quexml\quexmlpdf.php on line 1314

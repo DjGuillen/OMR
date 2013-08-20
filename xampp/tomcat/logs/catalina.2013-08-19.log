@@ -1,0 +1,50 @@
+Aug 19, 2013 1:36:02 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2012b\runtime\win64;C:\Program Files\MATLAB\R2012b\bin;C:\Program Files\TortoiseSVN\bin;C:\xampp\htdocs\quexf\bin\Tesseract-OCR;.
+Aug 19, 2013 1:36:03 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 19, 2013 1:36:03 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 19, 2013 1:36:03 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1049 ms
+Aug 19, 2013 1:36:03 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 19, 2013 1:36:03 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.41
+Aug 19, 2013 1:36:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\xampp\tomcat\webapps\docs
+Aug 19, 2013 1:36:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\xampp\tomcat\webapps\examples
+Aug 19, 2013 1:36:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\xampp\tomcat\webapps\host-manager
+Aug 19, 2013 1:36:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\xampp\tomcat\webapps\manager
+Aug 19, 2013 1:36:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\xampp\tomcat\webapps\ROOT
+Aug 19, 2013 1:36:04 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 19, 2013 1:36:04 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 19, 2013 1:36:04 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1085 ms
+Aug 19, 2013 3:20:17 AM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:499)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:371)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:458)
+

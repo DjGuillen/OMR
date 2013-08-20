@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "queXS CATI: Authentication Required"
+AuthUserFile ..\..\security\quex.htpasswd
+AuthGroupFile ..\..\security\quex.htgroup
+require group admin

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'NotethisRegular';
+  src: url('../../css/fonts/Note_this.eot');
+  src: local('Note this Regular'), local('Notethis'), url('../../css/fonts/Note_this.ttf') format('truetype');
+}
+body{
+color: 	#E0E0E0 ;
+font-family:sans-serif;
+}
+p{
+font-size:18px;
+font-family:sans-serif;
+}
+h1{
+font-family:'NotethisRegular', Verdana, Arial, sans-serif;
+color:#000000;
+}
+h2{
+font-family:sans-serif;
+}
+img{
+margin-left:15px;
+}
