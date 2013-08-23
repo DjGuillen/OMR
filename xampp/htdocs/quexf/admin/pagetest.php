@@ -132,7 +132,7 @@ function definetomap($zoom,$pid,$filename)
 
 }
 
-xhtml_head(T_("Page test"),true,array("../css/dragresize.css","../css/pagetest.css"),array("../js/prototype-1.6.0.2.js","../js/pagelayout.js"));
+xhtml_head(T_("Page test"),true,array("../css/dragresize.css","../css/pagetest.css","../css/style5.css"),array("../js/prototype-1.6.0.2.js","../js/pagelayout.js"));
 
 print "<div id='content'>";
 
@@ -262,15 +262,15 @@ else
 	//form to upload a document
 ?>
 
-<h1><? echo T_("Page test"); ?></h1>
-<h2><? echo T_("When using banding XML:");?></h2>
-<p><? echo  T_("You must import the original PDF and banding XML file (not a scanned version)"); ?></p>
-<h2><? echo T_("When manually banding:");?></h2>
-<p><? echo T_("You will get the best results if you:"); ?></p>
+<h1><? echo T_("Test formulara"); ?></h1>
+<h2><? echo T_("Kada koristite XML file sa postavkama:");?></h2>
+<p><? echo  T_("Morate dodati PDF file sa XML file-om koji sadrži postavke (ne skeniranu verziju)"); ?></p>
+<h2><? echo T_("Kada koristite manuelne postavke:");?></h2>
+<p><? echo T_("Najbolje rezultate postižete ako:"); ?></p>
 <ul>
-<li><? echo T_("Print out the form using the same method that you will for all the printed forms"); ?></li>
-<li><? echo T_("Scan the form to a PDF using the same options that you will for the filled forms"); ?></li>
-<li><? echo T_("Best options for scanning in are:"); ?>
+<li><? echo T_("Printate formular sa metodom koju ste koristili za generisane formulare"); ?></li>
+<li><? echo T_("Skenirate formular i spasite ga kao PDF file"); ?></li>
+<li><? echo T_("Preporučene opcije za skeniranje:"); ?>
 <ul><li><? echo T_("Monochrome (1 bit)"); ?></li>
 <li><? echo T_("300DPI Resolution"); ?></li></ul>
 </li>
@@ -278,8 +278,8 @@ else
 
 <form enctype="multipart/form-data" action="" method="post">
 	<p><input type="hidden" name="MAX_FILE_SIZE" value="1000000000" /></p>
-	<p><? echo T_("Select PDF file to upload:"); ?><input name="form" type="file" /></p>
-	<p><input type="submit" value="<? echo T_("Upload form"); ?>"/></p>
+	<p><? echo T_("Odaberite PDF file za upload:"); ?><input name="form" type="file" /></p>
+	<p><input type="submit" value="<? echo T_("Upload form"); ?>"class="upl"/></p>
 </form>
 
 <?

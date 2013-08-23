@@ -27,7 +27,7 @@ include_once("../db.inc.php");
 include('../functions/functions.xhtml.php');
 include('../functions/functions.import.php');
 
-xhtml_head(T_("Add new questionnaire"));
+xhtml_head(T_("Add new questionnaire"),true,array("../css/style5.css"));
 
 $a = false;
 
@@ -52,44 +52,44 @@ if ($a)
 	$suc = false;
 	if (!is_array($r))
 	{
-		print "<h1>" . T_("Successfully inserted new questionnaire") . "</h1>";
+		print "<h1>" . T_("Novi formular je uspješno dodan") . "</h1>";
 		$suc = true;
 		if (isset($r2))
 		{
 			if ($r2)
 			{
-				print "<h2>" . T_("Successfully loaded banding XML file") . "</h2>";
+				print "<h2>" . T_("XML file je uspješno dodan") . "</h2>";
 			}
 			else
 			{
-				print "<h2>" . T_("Failed to load banding XML file") . "</h2>";
+				print "<h2>" . T_("Greška u dodavanju XML file-a") . "</h2>";
 				$suc = false;
 			}
 		}
 		if ($suc == true)
 		{
-			print "<div><a href='pagesetup.php?qid=$r'>" . T_("Continue by setting up page edge detection (page setup)") . "</a></div>";
+			print "<div><a href='pagesetup.php?qid=$r'>" . T_("Nastavite sa postavkama detekcije ivica (Postavke stranice)") . "</a></div>";
 			xhtml_foot();
 			die();
 		}
 	}
 	else
 	{
-		print "<h1>" . T_("Failed to insert new questionnaire. Could have conflicting page id's") . "</h1>";
-		print "<p><a href='pagetest.php?filename=" . $r[1] . "'>" . T_("Test form to check for problems") . "</a></p>";
+		print "<h1>" . T_("Greška pri dodavanju novog formulara. Provjerite id formulara .") . "</h1>";
+		print "<p><a href='pagetest.php?filename=" . $r[1] . "'>" . T_("Testirajte kompatibilnost forme za detekciju grešaka") . "</a></p>";
 	}
 
 
 }
 
-print "<h1>" . T_("New questionnaire") . "</h1>";
-print "<h2>" . T_("When using banding XML:") . "</h2>";
-print "<p>" . T_("You must import the original PDF and banding XML file (not a scanned version)") . "</p>";
-print "<h2>" . T_("When manually banding:") . "</h2>";
-print "<p>" . T_("You will get the best results if you:") . "</p>";
-print "<ul><li>" . T_("Print out the form using the same method that you will for all the printed forms") . "</li>";
-print "<li>" . T_("Scan the (blank) form to a PDF using the same options that you will for the filled forms") . "</li>";
-print "<li>" . T_("Best options for scanning in are:");
+print "<h1>" . T_("Novi formular") . "</h1>";
+print "<h2>" . T_("Kada koristite XML file sa postavkama:") . "</h2>";
+print "<p>" . T_("Morate dodati PDF file sa XML file-om koji sadrži postavke (ne skeniranu verziju)") . "</p>";
+print "<h2>" . T_("Kada koristite manuelne postavke:") . "</h2>";
+print "<p>" . T_("Najbolje rezultate postižete ako:") . "</p>";
+print "<ul><li>" . T_("Printate formular sa metodom koju ste koristili za generisane formulare") . "</li>";
+print "<li>" . T_("Skenirate formular i spasite ga kao PDF file") . "</li>";
+print "<li>" . T_("Preporučene opcije za skeniranje:");
 print "<ul><li>" . T_("Monochrome (1 bit)") . "</li>";
 print "<li>" . T_("300DPI Resolution") . "</li></ul></li></ul>";
 
@@ -97,10 +97,11 @@ print "<li>" . T_("300DPI Resolution") . "</li></ul></li></ul>";
 
 <form enctype="multipart/form-data" action="" method="post">
 	<p><input type="hidden" name="MAX_FILE_SIZE" value="1000000000" /></p>
-	<p><? echo T_("Select PDF file to create form from"); ?>: <input name="form" type="file" /></p>
-	<p><? echo T_("(Optional): Select banding XML file"); ?>: <input name="bandingxml" type="file" /></p>
-	<p><? echo T_("Enter description of form"); ?>: <input name="desc" type="text"/><br/></p>
-	<p><input type="submit" value="<? echo T_("Upload form"); ?>" /></p>
+	<p><? echo T_("Odaberite PDF file na osnovu kojeg želite kreirati fomular"); ?>: <input name="form" type="file" /></p>
+	<p><? echo T_("(Neobavezno): Odaberite XML file sa postavkama"); ?>: <input name="bandingxml" type="file" /></p>
+	<p><input type="checkbox" name="test" value="test">Formular koji želite dodati predstavlja test<br></p>
+	<p><? echo T_("Opis forme"); ?>: <input name="desc" type="text"/><br/></p>
+	<p><input type="submit" value="<? echo T_("Upload form"); ?>" class="upl"/></p>
 </form>
 
 <?

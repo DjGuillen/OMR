@@ -45,7 +45,7 @@ function printquestionnaires()
 
 	xhtml_head(T_("Reorder variables"),true,array("../css/table.css"));
 
-	print "<table class='tclass'><tr><th>" . T_("Questionnaire") . "</th><th></th><th></th><th></th></tr>";
+	print "<table class='tclass'><tr><th>" . T_("Formular") . "</th><th></th><th></th><th></th></tr>";
 	$c = 1;
 	foreach($qs as $q)
 	{
@@ -57,7 +57,7 @@ function printquestionnaires()
 			$c = 1;
 			print "class='odd'";
 		}
-		print "><td>{$q['description']}</td><td><a href=\"?qid={$q['qid']}\">" . T_("Manual reorder") . "</a></td><td><a href=\"?qid={$q['qid']}&amp;position=position\">" . T_("Reorder by position") . "</a></td><td><a href=\"?qid={$q['qid']}&amp;varname=varname\">" . T_("Reorder by variable name") . "</a></td></tr>";
+		print "><td>{$q['description']}</td><td><a href=\"?qid={$q['qid']}\">" . T_("Manuelni redoslijed") . "</a></td><td><a href=\"?qid={$q['qid']}&amp;position=position\">" . T_("Redoslijed po poziciji") . "</a></td><td><a href=\"?qid={$q['qid']}&amp;varname=varname\">" . T_("Redoslijed po nazivu varijable") . "</a></td></tr>";
 	}
 	print "</table>";
 }

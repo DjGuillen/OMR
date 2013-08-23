@@ -203,7 +203,7 @@ if (isset($_GET['done']))
 			if (is_null($o))
 			{
 				//error
-				$error += "<div><a href='?pid=$pid&amp;qid=$qid>" . T_("Cannot detect page edge on page") . " $pid</a></div>";
+				$error += "<div><a href='?pid=$pid&amp;qid=$qid>" . T_("Neuspjela detekcija ivica formulara") . " $pid</a></div>";
 			}
 			else
 			{
@@ -222,8 +222,8 @@ if (isset($_GET['done']))
 	{
 		//no errors
 		xhtml_head(T_("Set page layout"));
-		print "<div>" . T_("Page layout has been updated") . "</div>";
-		print "<div><a href='bandajax.php?qid=$qid'>" . T_("Continue with banding") . "</a></div>";
+		print "<div>" . T_("Layout stranice je uspješno postavljen") . "</div>";
+		print "<div><a href='bandajax.php?qid=$qid'>" . T_("Nastavite sa postavkama") . "</a></div>";
 		xhtml_foot();
 		die();
 	}	
@@ -280,13 +280,13 @@ if (isset($_GET['qid']))
 
 		print " <a href=\"?zoom=$zoomup&amp;pid=$pid";
 		print "&amp;qid=" . $qid;
-		print "\">" . T_("Increase zoom") . "</a> <a href=\"?zoom=$zoomdown&amp;pid=$pid";
+		print "\">" . T_("Povećajte zoom") . "</a> <a href=\"?zoom=$zoomdown&amp;pid=$pid";
 		print "&amp;qid=" . $qid;
-		print "\">" . T_("Decrease zoom") . "</a><br/> ";
+		print "\">" . T_("Smanjite zoom") . "</a><br/> ";
 
-		print "<div><a href='?zoom=$zoom&amp;pid=$pid&amp;qid=$qid&amp;copy=copy'>" . T_("Copy settings from this page to all other pages") . "</a><br/></div>";
+		print "<div><a href='?zoom=$zoom&amp;pid=$pid&amp;qid=$qid&amp;copy=copy'>" . T_("Kopirajte postavke ove stranice na ostale") . "</a><br/></div>";
 		
-		print "<div><a href='?zoom=$zoom&amp;pid=$pid&amp;qid=$qid&amp;done=done'>" . T_("Finished page setup") . "</a><br/></div>";
+		print "<div><a href='?zoom=$zoom&amp;pid=$pid&amp;qid=$qid&amp;done=done'>" . T_("Završite postavke stranice") . "</a><br/></div>";
 
 
 		//show image with no coords selected

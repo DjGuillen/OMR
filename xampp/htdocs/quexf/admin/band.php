@@ -173,7 +173,7 @@ if (isset($_GET['qid']))
 		$zoomup = $zoom - 1; if ($zoomup < 1) $zoomup = 1;
 		$zoomdown = $zoom + 1;
 
-		print " <a href=\"band.php?zoom=$zoom\">" . T_("Choose another questionnaire") . "</a> <a href=\"band.php?zoom=$zoomup&amp;qid=$qid&amp;pid=$pid\">" . T_("Increase zoom") . "</a> <a href=\"band.php?zoom=$zoomdown&amp;qid=$qid&amp;pid=$pid\">" . T_("Decrease zoom") . "</a><br/> ";
+		print " <a href=\"band.php?zoom=$zoom\">" . T_("Odaberite drugi formular") . "</a> <a href=\"band.php?zoom=$zoomup&amp;qid=$qid&amp;pid=$pid\">" . T_("Povećajte zoom") . "</a> <a href=\"band.php?zoom=$zoomdown&amp;qid=$qid&amp;pid=$pid\">" . T_("Smanjite zoom") . "</a><br/> ";
 
 		//print all available pages as a link google style
 		$sql = "SELECT pid,width,height

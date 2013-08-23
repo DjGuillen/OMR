@@ -103,7 +103,7 @@ if (is_file(CONVERT_BIN)) {
 
 if ($fail)
 {
-	print "<h2>" . T_("Greška !!!") . "</h2>";
+	print "<h2>" . T_("Greška !!! <img src='../css/images/Error.png' alt='OK' height='32' width='32'>") . "</h2>";
 }
 else
 {

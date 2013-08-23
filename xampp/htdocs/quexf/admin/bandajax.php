@@ -577,7 +577,7 @@ if (isset($_GET['qid']))
 	{
 		$pid = intval($_GET['pid']);
 
-		print " <a href=\"?zoom=$zoom\">" . T_("Choose another questionnaire") . "</a> <a href=\"?zoom=$zoomup&amp;qid=$qid&amp;pid=$pid\">" . T_("Increase zoom") . "</a> <a href=\"?zoom=$zoomdown&amp;qid=$qid&amp;pid=$pid\">" . T_("Decrease zoom") . "</a><br/> ";
+		print " <a href=\"?zoom=$zoom\">" . T_("Odaberite drugi formular") . "</a> <a href=\"?zoom=$zoomup&amp;qid=$qid&amp;pid=$pid\">" . T_("Povećajte zoom") . "</a> <a href=\"?zoom=$zoomdown&amp;qid=$qid&amp;pid=$pid\">" . T_("Smanjite zoom") . "</a><br/> ";
 
 
 		//show image with no coords selected
