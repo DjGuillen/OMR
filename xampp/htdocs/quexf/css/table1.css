@@ -1,0 +1,10 @@
+table {
+    border-spacing: 0;
+}
+table tr{
+	text-align: center;
+	padding-left:20px;
+}
+table tr td {
+	padding:18px;
+}

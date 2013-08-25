@@ -51,6 +51,7 @@ print "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
 	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head><title><? if (empty($title)) print "queXF"; else print "queXF: $title"; ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="../js/jquery-1.4.js"></script> 
 <?
 	if ($css)
 		foreach ($css as $c) print "<link rel='stylesheet' href='$c' type='text/css'></link>";

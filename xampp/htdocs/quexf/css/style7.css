@@ -1,18 +1,18 @@
 @CHARSET "UTF-8";
 @font-face {
     font-family: 'WebSymbolsRegular';
-    src: url('websymbols/websymbols-regular-webfont.eot');
-    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('websymbols/websymbols-regular-webfont.woff') format('woff'),
-        url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
-        url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    src: url('../../css/websymbols/websymbols-regular-webfont.eot');
+    src: url('../../css/websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../css/websymbols/websymbols-regular-webfont.woff') format('woff'),
+        url('../../css/websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+        url('../../css/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 .ca-menu{
     padding:0;
     margin:20px auto;
-    width: 1424px;
+    width: 1016px;
 }
 .ca-menu li{
     width: 200px;

@@ -27,7 +27,7 @@ include_once("../db.inc.php");
 include('../functions/functions.xhtml.php');
 include('../functions/functions.import.php');
 
-xhtml_head(T_("Add new questionnaire"),true,array("../css/style5.css"));
+xhtml_head(T_("Add new questionnaire"),true,array("../css/style5.css"),array("../js/checkbox.js"));
 
 $a = false;
 
@@ -97,9 +97,29 @@ print "<li>" . T_("300DPI Resolution") . "</li></ul></li></ul>";
 
 <form enctype="multipart/form-data" action="" method="post">
 	<p><input type="hidden" name="MAX_FILE_SIZE" value="1000000000" /></p>
-	<p><? echo T_("Odaberite PDF file na osnovu kojeg želite kreirati fomular"); ?>: <input name="form" type="file" /></p>
-	<p><? echo T_("(Neobavezno): Odaberite XML file sa postavkama"); ?>: <input name="bandingxml" type="file" /></p>
-	<p><input type="checkbox" name="test" value="test">Formular koji želite dodati predstavlja test<br></p>
+	<p><? echo T_("Odaberite PDF file na osnovu kojeg želite kreirati fomular"); ?>: <input name="form" type="file" class="br"/></p>
+	<p><? echo T_("(Neobavezno): Odaberite XML file sa postavkama"); ?>: <input name="bandingxml" type="file" class="br"/></p>	
+<!--Učitavanje liste predmeta iz baze -->
+<p><input type="checkbox" name="test" value="test" id="test">Formular koji želite dodati predstavlja test<br></p>
+<?php
+$sql="SELECT * FROM subjects ORDER BY name ASC";
+$result=mysql_query($sql);
+?>
+<div id="subject" style="display:none">
+<p>Odaberite predmet za test koji želite dodati:<br/></p>
+<select name="subject" >
+<?php
+while($rows=mysql_fetch_array($result)){
+?>
+<option value="<?php echo $rows['name'] ?>"><?php echo $rows['name'] ?></option>
+<?php
+}
+ mysql_free_result($result);
+?>
+
+</select>
+</div>
+<!-- end-->
 	<p><? echo T_("Opis forme"); ?>: <input name="desc" type="text"/><br/></p>
 	<p><input type="submit" value="<? echo T_("Upload form"); ?>" class="upl"/></p>
 </form>

@@ -23,7 +23,6 @@
  */
 
 
-
 include_once(dirname(__FILE__).'/../config.inc.php');
 include_once(dirname(__FILE__).'/../db.inc.php');
 
@@ -238,7 +237,7 @@ function get_vid()
 
 	$sql = "SELECT vid
 		FROM verifiers
-		WHERE http_username = '{$_SERVER['PHP_AUTH_USER']}'";
+		WHERE http_username = '".$_SESSION['username']."'";
 
 	$rs = $db->GetRow($sql);
 

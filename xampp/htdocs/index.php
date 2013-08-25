@@ -8,23 +8,27 @@
  </head>
 	<body>
 	<?php
+	include 'quexf/db.inc.php';
 	session_start();	
 	
 		if (isset($_GET['logout'])){
 	    session_unset();
 		}
-		
+//echo $_SESSION['username'];		
 // LOGIN
 	if (isset($_SESSION['username'])){
 		$username = $_SESSION['username'];
-		header("Location:http://localhost/main.php");
+		$t=mysql_query("select type from users where username='".mysql_real_escape_string($username)."';");
+		    $d = mysql_fetch_assoc($t);
+			if($d['type']=="administrator"){
+		    header("Location:main.php");
+		    }
+		    else if($d['type']=="operator"){
+		    header("Location:quexf/index.php");
+		     }
 	}
 	
-	else if (isset($_POST['submit'])){	
-		mysql_connect("localhost", "root", "") or die("Greska u konektovanju!");
-        mysql_set_charset("utf8");
-        mysql_select_db("quexfuser") or die("Greska u pristupu bazi!");
-	
+	else if (isset($_POST['submit'])){		
 		$username= $_REQUEST['username'];
 		$q=mysql_query("select * from users where username='".mysql_real_escape_string($username)."';");
 		
@@ -35,8 +39,14 @@
 				
 				    if($data['password'] == $password){
 					    $_SESSION['username'] = $_REQUEST['username'];
-						header("Location:http://localhost/main.php");
-
+		                    $t=mysql_query("select type from users where username='".mysql_real_escape_string($username)."';");
+		                        $d = mysql_fetch_assoc($t);
+							    if($d['type']=="administrator"){
+		                        header("Location:main.php");
+		                        }
+		                        else if($d['type']=="operator"){
+		                        header("Location:quexf/index.php");
+		                        }
 				}
 				else{
 ?>

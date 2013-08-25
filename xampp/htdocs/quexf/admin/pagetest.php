@@ -278,7 +278,7 @@ else
 
 <form enctype="multipart/form-data" action="" method="post">
 	<p><input type="hidden" name="MAX_FILE_SIZE" value="1000000000" /></p>
-	<p><? echo T_("Odaberite PDF file za upload:"); ?><input name="form" type="file" /></p>
+	<p><? echo T_("Odaberite PDF file za upload:"); ?><input name="form" type="file" class="br"/></p>
 	<p><input type="submit" value="<? echo T_("Upload form"); ?>"class="upl"/></p>
 </form>
 

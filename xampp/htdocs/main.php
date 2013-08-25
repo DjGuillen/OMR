@@ -25,8 +25,7 @@
                 </span>
                 <div class="clr"></div>
             </div>
-            <h1>WEB bazirana OMR aplikacija za dodavanje i obradu formulara
-            <span>Aplikacija obrađuje skenirane ili generisane formulare koji se dodjeljuju operatorima sistema na verifikaciju.</span></h1>
+            <h1>WEB bazirana OMR aplikacija za dodavanje i obradu formulara</h1>
             <div class="content">
                 <ul class="ca-menu">
                     <li>
@@ -49,7 +48,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="ca-icon">C</span>
+                            <span class="ca-icon">T</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Prepoznavanje teksta</h2>
                                 <h3 class="ca-sub">Podešavanje i trening programa</h3>
@@ -67,13 +66,31 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="ca-icon">d</span>
+                            <span class="ca-icon">Z</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Dokumentacija</h2>
                                 <h3 class="ca-sub">Uputstvo za korištenje programa</h3>
                             </div>
                         </a>
                     </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">U</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Postavke</h2>
+                                <h3 class="ca-sub">Korisničke opcije</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">@</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Poruke</h2>
+                                <h3 class="ca-sub">Pošaljite poruku korisnicima sistema</h3>
+                            </div>
+                        </a>
+                    </li>					
                 </ul>
             </div><!-- content -->
         </div>

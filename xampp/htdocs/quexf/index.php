@@ -1,3 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" type="text/css" href="css/demo1.css" />
+   <link rel="stylesheet" type="text/css" href="css/style7.css" />
+   <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+   <link rel="stylesheet" type="text/css" href="css/jquery.gritter.css" />
+   <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+   <script type="text/javascript">google.load('jquery', '1.5');</script>
+   <script type="text/javascript" src="js/jquery.gritter.min.js"></script>
+   <title>OMR</title>
+ </head>
+	<body>
 <?
 /*	Copyright Deakin University 2007,2008
  *	Written by Adam Zammit - adam.zammit@deakin.edu.au
@@ -23,15 +38,102 @@
 
 include("functions/functions.xhtml.php");
 include("lang.inc.php");
+include("db.inc.php");
 
-xhtml_head();
+/*xhtml_head();
+xhtml_head(T_("Verify"),true,array("css/demo.css"),array("css/style7.css"));*/
+session_start();
+	if(isset($_SESSION['username']))
+	{
+	$_username=$_SESSION['username'];
+	}
 ?>
-
-<h1><? echo T_("queXF"); ?></h1>
-<p><a href="verifyjs.php"><? echo T_("Verify"); ?></a></p>
-<p><a href="review.php"><? echo T_("Review a form"); ?></a></p>
-<p><a href="../"><? echo T_("Return to index"); ?></a></p>
-
+        <div class="container">
+            <div class="header">
+            <a href="../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
+                <span class="right">
+                    <a href="#"><strong>LOGOVANI STE KAO: <?php print $_username;?></strong></a>
+                </span>
+                <div class="clr"></div>
+            </div>
+<h1><? echo T_("Verifikacija formulara za operatore sistema"); ?></h1>
+            <div class="content">
+                <ul class="ca-menu">
+                    <li>
+                        <a href="verifyjs.php">
+                            <span class="ca-icon">.</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Verifikacija formulara</h2>
+                                <h3 class="ca-sub">Potvrda ili izmjena prepoznavanja koje sistem izvrši</h3>
+                            </div>
+                        </a>
+                    </li>
+					<li>
+                        <a href="review.php">
+                            <span class="ca-icon">q</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Pregled formulara</h2>
+                                <h3 class="ca-sub">Prikaz formulara pozivom iz baze podataka</h3>
+                            </div>
+                        </a>
+                    </li>
+					<li>
+                        <a href="#">
+                            <span class="ca-icon">Z</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Dokumentacija</h2>
+                                <h3 class="ca-sub">Uputstvo za korištenje programa</h3>
+                            </div>
+                        </a>
+                    </li>
+					<li>
+                        <a href="#">
+                            <span class="ca-icon">U</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Postavke</h2>
+                                <h3 class="ca-sub">Korisničke opcije</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">@</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Poruke</h2>
+                                <h3 class="ca-sub">Pošaljite poruku korisnicima sistema</h3>
+                            </div>
+                        </a>
+                    </li>					
+                </ul>
+            </div><!-- content -->
+        </div>
+<?php
+		$sql = mysql_query("SELECT COUNT(f.done)NbLeft  FROM verifiers v LEFT JOIN verifierquestionnaire w ON v.vid=w.vid LEFT JOIN forms f ON w.qid=f.qid WHERE v.http_username='".$_SESSION['username']."' AND f.done=0");
+		$nbleft = mysql_fetch_assoc($sql);
+		//echo $nbleft['NbLeft'];
+if($nbleft['NbLeft']>0){		
+?>
+	<form method="post" action="index.php">
+		    <input type="hidden" name="nmb" value="<?php print $nbleft['NbLeft'] ?>" id="nmb"/>
+	</form>
+<script type="text/javascript">
+            var number=document.getElementById('nmb').value;
+			$.gritter.add({
+				// (string | mandatory) the heading of the notification
+				title: number+' formulara nisu verifikovana!',
+				// (string | mandatory) the text inside the notification
+				text: 'Otvorite tab za verifikaciju da bi ste mogli vefirikovati preostale formulare.',
+				// (string | optional) the image to display on the left
+				image: 'css/images/icon.png',
+				// (bool | optional) if you want it to fade out on its own or just sit there
+				sticky: false,
+				// (int | optional) the time you want it to be alive for before fading out
+				time: ''
+			});
+</script>
+<?
+}
+?>
 <?
 xhtml_foot();
 

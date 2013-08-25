@@ -31,10 +31,11 @@ global $db;
 
 $a = false;
 
-xhtml_head(T_("Add an operator"));
+xhtml_head(T_("Add an operator"),true,array("../css/style5.css"),array("../css/table1.css"));
 
-if (isset($_POST['operator']) && isset($_POST['d']))
+if (isset($_POST['operator']) && isset($_POST['d']) && isset($_POST['p']))
 {
+    $password=$db->qstr(sha1($_POST['p']),get_magic_quotes_gpc());
 	$operator = $db->qstr($_POST['operator'],get_magic_quotes_gpc());
 	$d = $db->qstr($_POST['d'],get_magic_quotes_gpc());
 	if ($d == "") $d = $operator;
@@ -43,8 +44,12 @@ if (isset($_POST['operator']) && isset($_POST['d']))
 		$sql = "INSERT INTO verifiers
 			(`vid` ,`description` ,`currentfid` ,`http_username`)
 			VALUES (NULL , $d, NULL , $operator);";
+			
+		$sql1 = "INSERT INTO users
+			(`id` ,`username` ,`password` ,`email` ,`type`)
+			VALUES (NULL , $operator, $password, NULL , 'operator');";	
 	
-		if ($db->Execute($sql))
+		if ($db->Execute($sql) && $db->Execute($sql1))
 		{
 			$a = T_("Added") . ": $operator";	
 		}else
@@ -61,13 +66,23 @@ if ($a)
 <?
 }
 ?>
-<h1><? echo T_("Add an operator"); ?></h1>
-<p><? echo T_("Adding an operator here will give the user the ability to verify forms once they have assigned a form using the");?> <a href="verifierquestionnaire.php"><? echo T_("Assign Verifier to Questionnaire"); ?></a> <? echo T_("tool"); ?>.</p>
-<p><? echo T_("Use this form to enter the username of a user based on your directory security system. For example, if you have secured the base directory of queXF using Apache file based security, enter the usernames of the users here. When the user accesses the verification page, they will uniquely be assigned a form."); ?></p>
+<h1><? echo T_("Dodajte novog operatora"); ?></h1>
 <form enctype="multipart/form-data" action="" method="post">
-<p><? echo T_("Enter the username (as in the security system, eg: azammit) of an operator to add:"); ?> <input name="operator" type="text"/></p>
-<p><? echo T_("Enter the name of the operator (eg Adam):"); ?> <input name="d" type="text"/></p>
-<p><input type="submit" value="<? echo T_("Add user"); ?>" /></p>
+<table>
+<tr>
+<td><p><? echo T_("Unesite korisničko ime:"); ?></p></td>
+<td><p><input name="operator" type="text"/></p></td>
+</tr>
+<tr>
+<td><p><? echo T_("Unesite lozinku:"); ?></p></td>
+<td><p><input name="p" type="password"/></p></td>
+</tr>
+<tr>
+<td><p><? echo T_("Unesite ime operatora:"); ?></p></td> 
+<td><p><input name="d" type="text"/></p></td>
+</tr>
+</table>
+<p><input type="submit" value="<? echo T_("Add operator"); ?>" class="upl"/></p>
 </form>
 </body>
 </html>

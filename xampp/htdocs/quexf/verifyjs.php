@@ -240,7 +240,7 @@ if (isset($_GET['complete']))
 
 	//make sure worklog and update occurs at the same time
 	$db->StartTrans();
-
+    // ISPRAVI OVDJE
 	$sql = "INSERT INTO
 		worklog (`vid`,`fid`,`assigned`,`completed`) VALUES ('$vid','$fid',FROM_UNIXTIME({$_SESSION['assigned']}),NOW())";
 	//print "$sql</br>";
