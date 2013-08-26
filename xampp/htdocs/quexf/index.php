@@ -120,9 +120,9 @@ if($nbleft['NbLeft']>0){
             var number=document.getElementById('nmb').value;
 			$.gritter.add({
 				// (string | mandatory) the heading of the notification
-				title: number+' formulara nisu verifikovana!',
+				title: 'Broj formulara koji nisu verifikovani: '+number,
 				// (string | mandatory) the text inside the notification
-				text: 'Otvorite tab za verifikaciju da bi ste mogli vefirikovati preostale formulare.',
+				text: 'Otvorite tab za verifikaciju da bi ste mogli verifikovati preostale formulare.',
 				// (string | optional) the image to display on the left
 				image: 'css/images/icon.png',
 				// (bool | optional) if you want it to fade out on its own or just sit there

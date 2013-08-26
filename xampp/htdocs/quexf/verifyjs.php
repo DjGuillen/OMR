@@ -1251,6 +1251,15 @@ print "</div>";
 
 
 }
+//AKO SE RADI O TESTU
+//QID IMAMO
+$sql1 = mysql_query("SELECT COUNT(s.qid) num  FROM questionnaires q LEFT JOIN subjects s ON q.qid=s.qid WHERE s.qid IS NOT NULL");
+		$istest = mysql_fetch_assoc($sql1);
+
+if($istest['num']>0){
+//RADI SE O TESTU
+}
+		
 
 
 ?>

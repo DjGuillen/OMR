@@ -82,7 +82,7 @@ if ($a)
 <td><p><input name="d" type="text"/></p></td>
 </tr>
 </table>
-<p><input type="submit" value="<? echo T_("Add operator"); ?>" class="upl"/></p>
+<p><input type="submit" value="<? echo T_("Dodaj operatora"); ?>" class="upl"/></p>
 </form>
 </body>
 </html>

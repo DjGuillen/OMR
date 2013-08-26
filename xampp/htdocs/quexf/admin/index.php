@@ -28,9 +28,9 @@ include ("../functions/functions.xhtml.php");
 include ("../lang.inc.php");
 include ("../config.inc.php");
 
-xhtml_head(T_("queXF Admin Functions"),true,array("../css/admin.css"));
-xhtml_head(T_("queXF Admin Functions"),true,array("../css/demo.css"));
-xhtml_head(T_("queXF Admin Functions"),true,array("../css/style6.css"));
+xhtml_head(T_("OMR"),true,array("../css/admin.css"));
+xhtml_head(T_("OMR"),true,array("../css/demo.css"));
+xhtml_head(T_("OMR"),true,array("../css/style6.css"));
 
 
 ?>
@@ -62,6 +62,13 @@ xhtml_head(T_("queXF Admin Functions"),true,array("../css/style6.css"));
 <li><a href="?page=bandajax.php"><? echo T_("Interaktivne postavke"); ?></a></li>
 <li><a href="?page=reorder.php"><? echo T_("Varijable formulara"); ?></a></li>
 <!--<li><a href="?page=limesurvey.php"><? //echo T_("queXS and Limesurvey integration"); ?></a></li>-->
+</ul></li>
+</ul>
+<li><p><? echo T_("Testovi"); ?></p>
+<ul class="bmenu">
+<ul><li><a href="?page=subjects.php"><? echo T_("Dodavanje predmeta"); ?></a></li>
+<li><a href="?page=students.php"><? echo T_("Dodavanje studenata"); ?></a></li>
+<li><a href="#"><? echo T_("Ispis rezultata"); ?></a></li>
 </ul></li>
 </ul>
 <li><p><? echo T_("Korisnici"); ?></p>

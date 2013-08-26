@@ -49,8 +49,9 @@ print "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
 	   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-	<head><title><? if (empty($title)) print "queXF"; else print "queXF: $title"; ?></title>
+	<head><title><? if (empty($title)) print "queXF"; else print "$title"; ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="../../favicon.ico">
 	<script src="../js/jquery-1.4.js"></script> 
 <?
 	if ($css)

@@ -150,12 +150,19 @@ function newquestionnaire($filename,$desc = "",$type="pngmono"){
 	$db->StartTrans();
 
 	$sql = "INSERT INTO questionnaires (qid,description,sheets)
-		VALUES (NULL,'$desc',0)";
+		VALUES (NULL,'$desc',0)";			
 
 	$db->Execute($sql);
 
 	$qid = $db->Insert_Id();
-
+//POVEZI FORMULAR I PREDMET U BAZUI
+	if(isset($_POST['test']) && isset($_POST['subject'])) {
+			
+		$sql1 = "UPDATE subjects SET qid=(SELECT MAX(qid) FROM questionnaires) WHERE name='".$_REQUEST['subject']."'";
+		$db->Execute($sql1);
+	
+	}
+	
 	//Number of imported pages
 	$pages = 0;
 
