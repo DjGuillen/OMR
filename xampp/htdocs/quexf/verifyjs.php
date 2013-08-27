@@ -300,7 +300,9 @@ $sql1 = mysql_query("SELECT COUNT(s.qid) num  FROM questionnaires q LEFT JOIN su
 	unset($_SESSION['boxgroups']);
 	unset($_SESSION['pages']);
 	unset($_SESSION['boxes']);
+	$usr=$_SESSION['username'];
 	session_unset();
+	$_SESSION['username']=$usr;
 
 	$sql = "UPDATE forms
 		SET done = 1
@@ -350,12 +352,16 @@ if (isset($_GET['clear']))
 	unset($_SESSION['boxgroups']);
 	unset($_SESSION['pages']);
 	unset($_SESSION['boxes']);
+	$usr=$_SESSION['username'];
 	session_unset();
+	$_SESSION['username']=$usr;
 }
 
 if (isset($_GET['assign']))
 {
+    $usr=$_SESSION['username'];		
 	session_unset();
+	$_SESSION['username']=$usr;
 	$fid = assign_to($vid);
 	if ($fid == false) 
 	{
@@ -364,8 +370,10 @@ if (isset($_GET['assign']))
 		print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\">" . T_("Check for more work") . "</a></p>";
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['boxes']);
-		unset($_SESSION['pages']);	
+		unset($_SESSION['pages']);
+        $usr=$_SESSION['username'];		
 		session_unset();
+		$_SESSION['username']=$usr;
 		xhtml_foot();
 		exit();
 	}
@@ -479,7 +487,9 @@ if (!isset($_SESSION['boxes'])) {
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['pages']);
 		unset($_SESSION['boxes']);
+		$usr=$_SESSION['username'];
 		session_unset();
+		$_SESSION['username']=$usr;
 		xhtml_foot();
 		exit();
 	}
