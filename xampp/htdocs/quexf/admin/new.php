@@ -105,7 +105,7 @@ print "<li>" . T_("300DPI Resolution") . "</li></ul></li></ul>";
 $sql="SELECT * FROM subjects ORDER BY name ASC";
 $result=mysql_query($sql);
 ?>
-<div id="subject" style="display:none">
+<div id="subject" style="display:none" name="subject">
 <p>Odaberite predmet za test koji želite dodati:<br/></p>
 <select name="subject" >
 <?php

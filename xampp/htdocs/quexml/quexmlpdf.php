@@ -1342,7 +1342,7 @@ class queXMLPDF extends TCPDF {
 		{
 			$stmp = array();
 			$sl = $this->numberToLetter($scount);
-			$stmp['title'] = "Section " . $sl;
+			$stmp['title'] = "";
 			$stmp['info'] = "";
 			$stmp['text'] = "";
 	
@@ -1364,7 +1364,7 @@ class queXMLPDF extends TCPDF {
 				$qtmp = array();
 				$rstmp = array();
 				
-				$qtmp['title'] = $sl . $qcount . $this->questionTitleSuffix;
+				$qtmp['title'] = "";
 				$qtmp['text'] = "";
 
 				foreach ($qu->text as $ttmp)
@@ -2586,7 +2586,7 @@ class queXMLPDF extends TCPDF {
 
 		$this->section[$this->sectionCP] = array('label' => $desc, 'title' => $title);
 
-		$html = "<span class=\"sectionTitle\">$title:</span>&nbsp;<span class=\"sectionDescription\">$desc</span>";
+		$html = "<span class=\"sectionTitle\">$title</span>&nbsp;<span class=\"sectionDescription\">$desc</span>";
 
 		if ($info && !empty($info))
 			$html .= "<div class=\"sectionInfo\">$info</div>";

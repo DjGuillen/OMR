@@ -68,7 +68,7 @@ xhtml_head(T_("OMR"),true,array("../css/style6.css"));
 <ul class="bmenu">
 <ul><li><a href="?page=subjects.php"><? echo T_("Dodavanje predmeta"); ?></a></li>
 <li><a href="?page=students.php"><? echo T_("Dodavanje studenata"); ?></a></li>
-<li><a href="#"><? echo T_("Ispis rezultata"); ?></a></li>
+<li><a href="../results.php"><? echo T_("Ispis rezultata"); ?></a></li>
 </ul></li>
 </ul>
 <li><p><? echo T_("Korisnici"); ?></p>

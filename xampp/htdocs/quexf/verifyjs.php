@@ -240,11 +240,62 @@ if (isset($_GET['complete']))
 
 	//make sure worklog and update occurs at the same time
 	$db->StartTrans();
-    // ISPRAVI OVDJE
 	$sql = "INSERT INTO
 		worklog (`vid`,`fid`,`assigned`,`completed`) VALUES ('$vid','$fid',FROM_UNIXTIME({$_SESSION['assigned']}),NOW())";
 	//print "$sql</br>";
 	$db->Execute($sql);
+	
+	//AKO SE RADI O TESTU
+$sql1 = mysql_query("SELECT COUNT(s.qid) num  FROM questionnaires q LEFT JOIN subjects s ON q.qid=s.qid WHERE s.qid IS NOT NULL");
+		$istest = mysql_fetch_assoc($sql1);
+        
+		if($istest['num']>0){
+                     
+					 $sql2 = mysql_query("SELECT *
+                     FROM formboxverifychar f
+                     INNER JOIN boxes b ON f.bid = b.bid
+                     INNER JOIN boxgroupstype t ON b.bgid = t.bgid
+                     WHERE t.varname IS NOT NULL
+                     AND f.val IS NOT NULL
+                     AND t.width = '24'
+                     AND f.fid = '$fid'
+                     AND f.vid = '$vid'
+                     ORDER BY f.bid ASC");
+					 
+		$imeprezime="";			 
+		while($r = mysql_fetch_array($sql2)){
+		$imeprezime=$imeprezime.$r['val'];
+		}
+		
+        preg_match_all('/[A-Z][^A-Z]*/', $imeprezime, $results);
+		
+        $firstname=$results[0][0];
+        $lastname=$results[0][1];
+		
+		//SABERI BODOVE 
+		$sql3=mysql_query("SELECT  DISTINCT(b.bid), f.fid, f.qid, b.value, fb.val
+                           FROM forms f
+                           INNER JOIN formboxverifychar fb ON f.fid = fb.fid
+                           INNER JOIN boxes b ON fb.bid = b.bid
+                           WHERE f.qid='".$qid."'
+						   AND f.fid='".$fid."'
+                           AND fb.val='1'
+                           AND b.value>'0'");
+
+        $pointsnb=0;
+
+        while($p = mysql_fetch_array($sql3)){
+        $pointsnb=$pointsnb+$p['value'];
+        }
+		
+		$sql4=mysql_query("SELECT id FROM students WHERE fname='".$firstname."' AND lname='".$lastname."'"); 
+		$sid = mysql_fetch_assoc($sql4);
+		
+	    $sql5=mysql_query("SELECT id FROM subjects WHERE qid='".$qid."'"); 
+		$sbid = mysql_fetch_assoc($sql5);
+		
+		$sql6 =mysql_query("INSERT INTO results (`id`,`sid`,`ssid`,`points`) VALUES (NULL,'".$sbid['id']."','".$sid['id']."','$pointsnb')");
+    }    		
 
 	unset($_SESSION['boxgroups']);
 	unset($_SESSION['pages']);
@@ -1251,15 +1302,6 @@ print "</div>";
 
 
 }
-//AKO SE RADI O TESTU
-//QID IMAMO
-$sql1 = mysql_query("SELECT COUNT(s.qid) num  FROM questionnaires q LEFT JOIN subjects s ON q.qid=s.qid WHERE s.qid IS NOT NULL");
-		$istest = mysql_fetch_assoc($sql1);
-
-if($istest['num']>0){
-//RADI SE O TESTU
-}
-		
 
 
 ?>
