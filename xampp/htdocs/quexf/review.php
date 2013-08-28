@@ -1,5 +1,9 @@
 <?
-
+    session_start();
+	if(isset($_SESSION['username']))
+	{
+	$username=$_SESSION['username'];	
+	}
 /*	Copyright Deakin University 2007,2008
  *	Written by Adam Zammit - adam.zammit@deakin.edu.au
  *	For the Deakin Computer Assisted Research Facility: http://www.deakin.edu.au/dcarf/
@@ -79,8 +83,66 @@ if (isset($_GET['var']))
       <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title><? echo T_("Review Form"); ?> - <? print "FID:$fid"; ?></title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" type="text/css" href="css/demo1.css" />
 <style type="text/css">
+@font-face {
+  font-family: 'NotethisRegular';
+  src: url('../css/fonts/Note_this.eot');
+  src: local('Note this Regular'), local('Notethis'), url('../css/fonts/Note_this.ttf') format('truetype');
+}
+.p2{
+font-family:sans-serif;
+font-size: 16px;
+color:#FFFFFF;
+}
+td {
+text-align:left;
+width: 15%
+}
+.dd{
+margin-left:10%;
+margin-top:15%;
+width:350px;
+}
+.ppl {
+  /* General Properties */
+  height:30px;
+  width:150px;
+  margin-left:5%;
+  border:1px solid #494949;
+  background:#404040;
+  /* CSS3 Styling */
+  background:-moz-radial-gradient(bottom, #656565, #404040 60%);
+  background:-webkit-gradient(radial, center bottom, 0, center 230, 230, from(#656565), to(#404040));
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  -moz-box-shadow:0px 0px 3px #000;
+  -webkit-box-shadow:0px 0px 3px #000;
+  box-shadow:0px 0px 3px #000;
+  /* Text Styling */
+  color:#fff;
+  text-shadow:0px 0px 5px rgba(255, 255,255, 0.5);
+  font-family:'NotethisRegular', Verdana, Arial, sans-serif;
+  font-size:20px;
+  padding-top:1px;
+}
+  
+.ppl:hover, input#upl:focus {
+  background:-moz-radial-gradient(bottom, #656565, #404040 80%);
+  background:-webkit-gradient(radial, center bottom, 0, center 230, 250, from(#656565), to(#404040));
+}
+
+.ppl:active {
+  -moz-box-shadow:0px 0px 2px #000;
+  -webkit-box-shadow:0px 0px 2px #000;
+  box-shadow:0px 0px 2px #000;
+  text-shadow:0px 0px 8px rgba(255, 255,255, 1);
+}
 #topper {
+background: #999966;
   position : fixed;
   width : 100%;
   height : 5%;
@@ -95,7 +157,7 @@ if (isset($_GET['var']))
 
 #header {
   position : fixed;
-  width : 15%;
+  width : 22%;
   height : 95%;
   top : 5%;
   right : 0;
@@ -107,7 +169,7 @@ if (isset($_GET['var']))
 #content {
   position : fixed;
   top : 5%;
-  left : 15%;
+  left : 5%;
   bottom : auto;
   width : 85%;
   height : 100%;
@@ -118,6 +180,14 @@ if (isset($_GET['var']))
 </style>
 </head>
 <body>
+        <div class="container">
+            <div class="header">
+            <a href="../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
+                <span class="right">
+                    <a href="#"><strong>LOGOVANI STE KAO: <?php print $username;?></strong></a>
+                </span>
+                <div class="clr"></div>
+            </div>
 
 
 
@@ -127,20 +197,33 @@ if (isset($_GET['var']))
 
 //show content
 print "<div id=\"content\">";
-	print "<div style=\"position:relative;\"><img src=\"showpage.php?pid=$pid&amp;fid=$fid\" style=\"width:800px;\" alt=\"Image of page $pid, form $fid\" />";
+	print "<div class='p2' style=\"position:relative;\"><img src=\"showpage.php?pid=$pid&amp;fid=$fid\" style=\"width:800px;\" alt=\"Slika stranice $pid, formular $fid\" />";
 print "</div></div>";
 
 //show list of bgid for this fid
 print "<div id=\"header\">";
-	print "<p>F:$fid</p>";
 
 ?>
 
 	<form action="" method="get">
-	<div><? echo T_("Form:"); ?> <input type="text" size="5" name="fid" value="<? echo $fid ?>"/>
-		<? echo T_("Variable:"); ?> <input type="text" size="9" name="var" value="<? echo $var ?>"/>
-		<? echo T_("Page:"); ?> <input type="text" size="4" name="pid" value="<? echo $pid ?>"/>
-		<input type="submit"/></div>
+	<div class='dd'>
+	<?php print "<p class='p2'>F:$fid</p>" ?>
+	<table>
+	<tr>
+	<td><p class='p2'>Formular :</p></td>
+	<td><input type="text" size="5" name="fid" value="<? echo $fid ?>"/></td>
+	</tr>
+	<tr>
+	<td><p class='p2'>Varijabla :</p></td>
+	<td><input type="text" size="9" name="var" value="<? echo $var ?>"/></td>
+	</tr>
+	<tr>
+	<td><p class='p2'>Stranica :</p></td> 
+	<td><input type="text" size="4" name="pid" value="<? echo $pid ?>"/></td>
+	</tr>
+	</table>
+	</br>
+	<input type="submit" value="Pošalji upit" class='ppl'/></div>
 	</form>
 
 <?

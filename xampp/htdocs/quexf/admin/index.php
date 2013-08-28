@@ -71,7 +71,7 @@ xhtml_head(T_("OMR"),true,array("../css/style6.css"));
 <li><a href="../results.php"><? echo T_("Ispis rezultata"); ?></a></li>
 </ul></li>
 </ul>
-<li><p><? echo T_("Korisnici"); ?></p>
+<li><p><? echo T_("Operatori"); ?></p>
 <ul class="bmenu">
 <ul><li><a href="?page=../../quexf/admin/operators.php"><? echo T_("Dodavanje operatora"); ?></a></li>
 <li><a href="?page=verifierquestionnaire.php"><? echo T_("Dodjeljivanje formulara"); ?></a></li></ul></li>
@@ -92,7 +92,7 @@ xhtml_head(T_("OMR"),true,array("../css/style6.css"));
 <li><a href="?page=listfiles.php?status=2"><? echo T_("Prikaz gresaka"); ?></a></li>
 <li><a href="?page=listduplicates.php"><? echo T_("Prikaz duplikata"); ?></a></li>
 <li><a href="?page=listforms.php"><? echo T_("Ponovna verifikacija"); ?></a></li>
-<li><a href="?page=listpagenotes.php"><? echo T_("List page notes"); ?></a></li>
+<!--<li><a href="?page=listpagenotes.php"><? //echo T_("List page notes"); ?></a></li>-->
 <!--<li><a href="?page=pagesmissing.php"><? //echo T_("Pages missing from scan"); ?></a></li>-->
 <!--<li><a href="?page=missingpages.php"><? //echo T_("Handle undetected pages"); ?></a></li></ul></li>-->
 <!--<li><h3><? //echo T_("Output"); ?></h3>-->
@@ -105,11 +105,13 @@ xhtml_head(T_("OMR"),true,array("../css/style6.css"));
 <ul><li><a href="?page=progress.php"><? echo T_("Prikaz progresa"); ?></a></li>
 <li><a href="?page=performance.php"><? echo T_("Prikaz performansi"); ?></a></li></ul></li>
 </ul>
-<li><p><? echo T_("Klijenti"); ?></p>
+<!--
+<li><p><? //echo T_("Klijenti"); ?></p>
 <ul class="bmenu">
-<ul><li><a href="?page=../../quexs/admin/clients.php"><? echo T_("Dodavanje klijenata"); ?></a></li>
-<li><a href="?page=clientquestionnaire.php"><? echo T_("Dodjeljivanje formulara"); ?></a></li></ul></li>
+<ul><li><a href="?page=../../quexs/admin/clients.php"><? //echo T_("Dodavanje klijenata"); ?></a></li>
+<li><a href="?page=clientquestionnaire.php"><? //echo T_("Dodjeljivanje formulara"); ?></a></li></ul></li>
 </ul>
+-->
 <li><p><? echo T_("Sistemske postavke"); ?></p>
 <ul class="bmenu">
 <ul><li><a href="?page=pagesetup.php"><? echo T_("Postavke stranice"); ?></a></li>

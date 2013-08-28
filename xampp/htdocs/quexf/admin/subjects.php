@@ -67,7 +67,7 @@ if ($a)
 <td><p><input name="subject" type="text"/></p></td>
 </tr>
 </table>
-<p><input type="submit" value="<? echo T_("Dodaj predmet"); ?>" class="upl"/></p>
+<p><input type="submit" value="<? echo T_("Dodaj predmet"); ?>" class="upl1"/></p>
 </form>
 </body>
 </html>

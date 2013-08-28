@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 @import url('reset.css');
 /* General Demo Style */
+
 body{
 	background:url(../../images/pattern.png),url(../../images/background1.png);
     background-color: transparent;
@@ -14,16 +15,38 @@ body{
 	color: #333;
 	font-family: 'Terminal Dosis', Arial, sans-serif;
 	font-size: 13px;
-	text-align:center;
 }
 
 .p1{
 font-size: 25px;
 }
+.p2{
+font-family:sans-serif;
+margin-left:5%;
+margin-top:5%;
+font-size: 16px;
+color:#FFFFFF;
+}
+.p3{
+font-family:sans-serif;
+margin-left:5%;
+font-size: 16px;
+color:#FFFFFF;
+}
+.p4{
+font-family:sans-serif;
+margin-left:5%;
+font-size: 16px;
+color:#FFFF00;
+}
+
 .another{
 margin-right:30%;
 font-size: 25px;
 }
+
+
+
 
 .container{
 	position:relative;

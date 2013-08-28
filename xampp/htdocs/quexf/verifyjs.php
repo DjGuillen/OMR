@@ -30,6 +30,11 @@ include_once("db.inc.php");
 include("functions/functions.image.php");
 include("functions/functions.xhtml.php");
 include("functions/functions.database.php");
+
+	//if(isset($_SESSION['username']))
+	//{
+	//$_username=$_SESSION['username'];
+	//}
 				
 
 function bgidtocss($zoom = 1,$fid,$pid)
@@ -365,9 +370,25 @@ if (isset($_GET['assign']))
 	$fid = assign_to($vid);
 	if ($fid == false) 
 	{
-		xhtml_head(T_("Verify: No more work"));
-		print "<p>" . T_("NO MORE WORK") . "</p>";
-		print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\">" . T_("Check for more work") . "</a></p>";
+		print "<html>
+ <head>
+   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+   <link rel='stylesheet' type='text/css' href='css/demo1.css' />
+   <link rel='stylesheet' type='text/css' href='css/style7.css' />
+   <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+   <title>OMR</title>
+ </head>
+ <body>
+             <div class='header'>
+            <a href='../index.php?logout=1'><strong>&laquo; Odjavi se</strong></a>
+                <span class='right'>
+                    <a href='#'><strong>LOGOVANI STE KAO:". $_SESSION['username']."</strong></a>
+                </span>
+                <div class='clr'></div>
+            </div>";
+		print "<p class='p1'>NEMA NOVIH ZADATAKA</p>";
+		print "<p class='p1'><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\">Reload stranice za provjeru novog zadatka!</a></p>";
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['boxes']);
 		unset($_SESSION['pages']);
@@ -383,13 +404,31 @@ if (isset($_GET['assign']))
 
 if ($fid == false)
 {
-	xhtml_head(T_("Verify: Assign form"),true,array("css/table.css"));
+    print "<html>
+ <head>
+   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+   <link rel='stylesheet' type='text/css' href='css/demo1.css' />
+   <link rel='stylesheet' type='text/css' href='css/style7.css' />
+   <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+   <title>OMR</title>
+ </head>
+ <body>
+             <div class='header'>
+            <a href='../index.php?logout=1'><strong>&laquo; Odjavi se</strong></a>
+                <span class='right'>
+                    <a href='#'><strong>LOGOVANI STE KAO:". $_SESSION['username']."</strong></a>
+                </span>
+                <div class='clr'></div>
+            </div>";
+			
+	//xhtml_head(T_("Verify: Assign form"),true,array("css/table.css"));
 	print "<div id=\"links\">";
-	print "<p>" . T_("There is no form currently assigned to you") . "</p>";
-	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\">" . T_("Assign next form") . "</a></p>";
+	print "<p class='p1'>" . T_("Trenutno nema formulara dodjeljenih vama") . "</p></br>";
+	print "<p class='p1'><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\">" . T_("Verifikuj sljedeći formular") . "</a></p>";
 	print "</div>";
 	print "<div id=\"wait\" style=\"visibility: hidden;\">
-<p>" .  T_("Assigning next form: Please wait...") . "</p>
+<p class='p1'>" .  T_("Dodjeljivanje novog formulara: Molim pričekajte...") . "</p>
 </div>";
 
 	
@@ -433,10 +472,10 @@ if ($fid == false)
 
 		$prss = $db->GetAll($sql);
 
-		print "<h3>$pdes</h3>";
-		xhtml_table($prss,array('ve','c','CPH','PPH'),array(T_("Operator"),T_("Completed Forms"),T_("Completions Per Hour"),T_("Pages Per Hour")),"tclass",array
+		print "<p class='p1'>$pdes</p></br>";
+		xhtml_table($prss,array('ve','c','CPH','PPH'),array(T_("Operator"),T_("Verifikovani formulari"),T_("Formular po satu"),T_("Stranica po satu")),"tclass",array
 ("vid" => $vid));
-		print "<p>" . T_("Remain to verify") . ": $remain</p>";
+		print "</br><p class='another'>" . T_("Ostalo za verifikaciju") . ": $remain</p></br></br>";
 	}
 	
 
@@ -483,7 +522,7 @@ if (!isset($_SESSION['boxes'])) {
 	{
 		xhtml_head(T_("Verify: No more work"));
 		print "<p>" . T_("NO MORE WORK") . "</p>";
-		print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\">" . T_("Check for more work") . "</a></p>";
+		print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\">" . T_("Reload stranice za provjeru novog zadatka !") . "</a></p>";
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['pages']);
 		unset($_SESSION['boxes']);
@@ -592,14 +631,30 @@ if ($bgid != "")
 else if ($pid == "") 
 {
 	//we are done
-	xhtml_head(T_("Verify: Done"));
-	print "<p>" . T_("The required fields have been filled") . "</p>";
+print "<html>
+ <head>
+   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+   <link rel='stylesheet' type='text/css' href='css/demo1.css' />
+   <link rel='stylesheet' type='text/css' href='css/style7.css' />
+   <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+   <title>OMR</title>
+ </head>
+ <body>
+             <div class='header'>
+            <a href='../index.php?logout=1'><strong>&laquo; Odjavi se</strong></a>
+                <span class='right'>
+                    <a href='#'><strong>LOGOVANI STE KAO:". $_SESSION['username']."</strong></a>
+                </span>
+                <div class='clr'></div>
+            </div>";
+	print "<p class='p1'>Zahtjevana polja su ispunjena</p>";
 	print "<div id=\"links\">";
-	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?complete=complete\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\">" . T_("Submit completed form to database") . "</a></p>";
-	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?review=review#boxGroup\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\">" . T_("Review all questions again") . "</a></p>";
-	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?clear=clear#boxGroup\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\">" . T_("Clear all entered data and review again") . "</a></p></div>";
+	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?complete=complete\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\"><p class='p1'>Pošalji kompletiran formular u bazu</p></a></p>";
+	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?review=review#boxGroup\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\"><p class='p1'>Ponovo verifikuj sva pitanja</p></a></p>";
+	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?clear=clear#boxGroup\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\"><p class='p1'>Izbriši sve unesene podatke i verifikuj opet</p></a></p></div>";
 
-	print "<div id=\"wait\" style=\"visibility: hidden;\"><p>" .  T_("Submitting: Please wait...") . "</p></div>";
+	print "<div id=\"wait\" style=\"visibility: hidden;\"><p class='p1'>" .  T_("Slanje podataka: Molim pričekajte...") . "</p></div>";
 	xhtml_foot();
 
 	exit();
@@ -615,7 +670,11 @@ else if ($pid == "")
       <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title><? echo T_("Verifier"); ?> - <? print "QID:$qid FID:$fid DESC:$description"; ?></title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" type="text/css" href="css/demo2.css" />
+   <link rel="stylesheet" type="text/css" href="css/style7.css" />
 <script type="text/javascript">
+
 
 /* <![CDATA[ */
 
@@ -1179,6 +1238,7 @@ window.onload = init;
 </script>
 <style type="text/css">
 #topper {
+background: #999966;
   position : fixed;
   width : 100%;
   height : 5%;
@@ -1189,6 +1249,12 @@ window.onload = init;
   border-bottom : 2px solid #cccccc;
   overflow : auto;
 	text-align:center;
+}
+.p5{
+margin-top:27px;
+font-family:Helvetica;
+font-size: 14px;
+color:#FFFFFF;
 }
 
 #header {
@@ -1205,7 +1271,7 @@ window.onload = init;
 #content {
   position : fixed;
   top : 5%;
-  left : 15%;
+  left : 30%;
   bottom : auto;
   width : 85%;
   height : 100%;
@@ -1227,7 +1293,14 @@ window.onload = init;
 </head>
 <body>
 
-
+        <div class="container">
+            <div class="header">
+            <a href="../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
+                <span class="right">
+                    <a href="#"><strong>LOGOVANI STE KAO: <?php print $_SESSION['username'];?></strong></a>
+                </span>
+                <div class="clr"></div>
+            </div>
 
 <?
 
@@ -1273,20 +1346,26 @@ else
 	//show list of bgid for this fid
 	print "<div id=\"header\">";
 	
-	print "<p>Q:$qid F:$fid P:$pid</p>";
-	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?pid=$pid&amp;fid=$fid&amp;centre=centre\">" . T_("Centre Page") . "</a></p>";
+	print "<p class='p2'>Q:$qid F:$fid P:$pid</p></br>";
+	print "<p><a class='p4' href=\"" . $_SERVER['PHP_SELF'] . "?pid=$pid&amp;fid=$fid&amp;centre=centre\">Centriraj Stranicu</a></p>";
 
 	print "<div id='note'><object class='embeddedobject' id='mainobj' data='pagenote.php?pid=$pid&amp;fid=$fid&amp;vid=$vid' standby='" . T_("Loading panel...") . "' type='application/xhtml+xml'><div>" . T_("Error, try with Firefox") . "</div></object></div>";
+	
+	print "<p class='p3'>Nazivi varijabli formulara :</p></br>";
+	
+    $i=1;
 	
 	foreach($_SESSION['boxgroups'] as $key => $val)
 	{
 		if ($val['pid'] == $pid)
 		{
 			//if ($bgid == $key)
-				print "<strong>{$val['varname']}</strong><br/>";
+				print "<p class='p3'>$i. {$val['varname']}</p><br/>";
+			
 			//else
 			//	print "<a id=\"link$key\" href=\"" . $_SERVER['PHP_SELF'] . "?bgid=$key&amp;fid=$fid#boxGroup\">{$val['varname']}</a><br/>";
-		}	
+		}      
+        $i++;		
 	}
 	
 print "</div>";
@@ -1301,7 +1380,7 @@ print "</div>";
 	foreach($_SESSION['pages'] as $key => $val)
 	{
 		if ($pid == $key)
-			print "<strong>$count</strong>";
+			print "<p class='p5'><strong>STRANICA: $count</strong></p>";
 		else
 			print " <a href=\"" . $_SERVER['PHP_SELF'] . "?pid=$key&amp;fid=$fid#boxGroup\">$count</a> ";
 		$count++;

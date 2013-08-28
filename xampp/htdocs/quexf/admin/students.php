@@ -78,7 +78,7 @@ if ($a)
 <td><p><input name="indexnb" type="text"/></p></td>
 </tr>
 </table>
-<p><input type="submit" value="<? echo T_("Dodaj studenta"); ?>" class="upl"/></p>
+<p><input type="submit" value="<? echo T_("Dodaj studenta"); ?>" class="upl1"/></p>
 </form>
 </body>
 </html>

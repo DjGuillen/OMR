@@ -73,7 +73,7 @@ $sql = "SELECT f.fid, v.description as name, q.description as quest, CONCAT('<a 
 
 $fs = $db->GetAll($sql);
 
-xhtml_table($fs,array('fid','name','quest','link'),array(T_('Form ID'),T_('Operator'),T_('Questionnaire'),T_('Re verify')));
+xhtml_table($fs,array('fid','name','quest','link'),array(T_('Form ID'),T_('Operator'),T_('Formular'),T_('Ponovo verifikuj')));
 
 xhtml_foot();
 

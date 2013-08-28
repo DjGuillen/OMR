@@ -1,5 +1,61 @@
 <?
+print"<style type='text/css'>
+@font-face {
+  font-family: 'NotethisRegular';
+  src: url('../../css/fonts/Note_this.eot');
+  src: local('Note this Regular'), local('Notethis'), url('../../css/fonts/Note_this.ttf') format('truetype');
+}
+body{
+color: 	#E0E0E0 ;
+font-family:sans-serif;
+}
+p{
+font-size:18px;
+font-family:sans-serif;
+}
+h1{
+font-family:'NotethisRegular', Verdana, Arial, sans-serif;
+color:#000000;
+}
+h2{
+font-family:sans-serif;
+}
+.submit {
+  /* General Properties */
+  height:34px;
+  width:600px;
+  border:1px solid #494949;
+  background:#404040;
+  /* CSS3 Styling */
+  background:-moz-radial-gradient(bottom, #656565, #404040 60%);
+  background:-webkit-gradient(radial, center bottom, 0, center 230, 230, from(#656565), to(#404040));
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  -moz-box-shadow:0px 0px 3px #000;
+  -webkit-box-shadow:0px 0px 3px #000;
+  box-shadow:0px 0px 3px #000;
+  /* Text Styling */
+  color:#fff;
+  text-shadow:0px 0px 5px rgba(255, 255,255, 0.5);
+  font-family:'NotethisRegular', Verdana, Arial, sans-serif;
+  font-size:24px;
+  padding-top:1px;
+  margin-left:1.5%;
+}
+  
+.submit:hover, input#upl:focus {
+  background:-moz-radial-gradient(bottom, #656565, #404040 80%);
+  background:-webkit-gradient(radial, center bottom, 0, center 230, 250, from(#656565), to(#404040));
+}
 
+.submit:active {
+  -moz-box-shadow:0px 0px 2px #000;
+  -webkit-box-shadow:0px 0px 2px #000;
+  box-shadow:0px 0px 2px #000;
+  text-shadow:0px 0px 8px rgba(255, 255,255, 1);
+}
+</style>";
 /*	Copyright Deakin University 2007,2008
  *	Written by Adam Zammit - adam.zammit@deakin.edu.au
  *	For the Deakin Computer Assisted Research Facility: http://www.deakin.edu.au/dcarf/
@@ -59,7 +115,7 @@ if ($p)
         $d = process_get_data($p);
         if ($d !== false)
         {
-                xhtml_table($d,array('process_log_id','datetime','data'),array(T_("Log id"), T_("Date"), T_("Log entry")));
+                xhtml_table($d,array('process_log_id','datetime','data'),array(T_("Id unosa"), T_("Datum"), T_("Unos")));
         }
 
 }
@@ -74,20 +130,20 @@ else
 	}
 
 	?>	
-	<h1><? echo T_("Directory"); ?></h1>
+	<h1><? echo T_("Folder"); ?></h1>
 	<form enctype="multipart/form-data" action="?" method="post">
-	<p><? echo T_("Enter directory local to the server (eg /mnt/iss/tmp/images)"); ?>: <input name="dir" type="text" value="<? echo realpath("../doc/filled"); ?>"/></p>
-	<p><input name='process' id='process' type="submit" value="<? echo T_("Process directory: browser window must remain open"); ?>" /></p>
-	<p><input name='watch' id='watch' type="submit" value="<? echo T_("Watch this directory in the background (recommended)"); ?>" /></p>
+	<p><? echo T_("Folder na serveru  (npr. /mnt/iss/tmp/images)"); ?>: <input name="dir" type="text" value="<? echo realpath("../doc/filled"); ?>"/></p>
+	<p><input name='process' class="submit" id='process' type="submit" value="<? echo T_("Pogledaj u folderu: browser prozor mora ostati otvoren"); ?>" /></p>
+	<p><input name='watch' class="submit" id='watch' type="submit" value="<? echo T_("Provjeri folder u pozadini (preporučeno)"); ?>" /></p>
 	</form>
 	<?
 
-	print "<h2>" . T_("Outcome of last process run (if any)") . "</h2>";
+	print "</br><p>" . T_("Ishod zadnjeg prrocesa (ako postoji)") . "</p>";
 	
 	$d = process_get_last_data(1);
 	if ($d !== false)
         {
-                xhtml_table($d,array('process_log_id','datetime','data'),array(T_("Log id"), T_("Date"), T_("Log entry")));
+                xhtml_table($d,array('process_log_id','datetime','data'),array(T_("Id unosa"), T_("Datum"), T_("Unos")));
         }
 
 }

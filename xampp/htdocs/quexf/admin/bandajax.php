@@ -1,4 +1,10 @@
 <?
+print"<style type='text/css'>
+a:link {
+text-decoration:none;
+font-size: 1.3em;
+}
+</style>";
 
 /*	Copyright Deakin University 2007,2008
  *	Written by Adam Zammit - adam.zammit@deakin.edu.au
@@ -608,7 +614,7 @@ else
 	
 	foreach($qs as $q)
 	{
-		print "<a href=\"?zoom=$zoom&amp;qid={$q['qid']}\">". T_("Band") . ": {$q['description']}</a>";
+		print "<a href=\"?zoom=$zoom&amp;qid={$q['qid']}\">". T_("Formular ") . ": {$q['description']}</a>";
 		print "<br/>";
 	}
 }

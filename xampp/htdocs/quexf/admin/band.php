@@ -103,7 +103,12 @@ session_start();
       <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title><? echo T_("Band"); ?></title>
-
+<style type="text/css">
+a:link {
+text-decoration:none;
+font-size: 1.3em;
+}
+</style>
 <script type="text/javascript">
 function init()
 {
@@ -375,7 +380,7 @@ else
 	foreach($qs as $q)
 	{
 
-		print "<a href=\"band.php?zoom=$zoom&amp;qid={$q['qid']}\">" . T_("Band") . ": {$q['description']}</a>";
+		print "<a href=\"band.php?zoom=$zoom&amp;qid={$q['qid']}\">" . T_("Formular ") . ": {$q['description']}</a>";
 		print "<br/>";
 	}
 

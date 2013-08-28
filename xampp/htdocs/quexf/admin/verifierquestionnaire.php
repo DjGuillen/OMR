@@ -1,5 +1,46 @@
 <?
+print"<style type='text/css'>
+@font-face {
+  font-family: 'NotethisRegular';
+  src: url('../../css/fonts/Note_this.eot');
+  src: local('Note this Regular'), local('Notethis'), url('../../css/fonts/Note_this.ttf') format('truetype');
+}
+.submit {
+  /* General Properties */
+  height:34px;
+  width:270px;
+  border:1px solid #494949;
+  background:#404040;
+  /* CSS3 Styling */
+  background:-moz-radial-gradient(bottom, #656565, #404040 60%);
+  background:-webkit-gradient(radial, center bottom, 0, center 230, 230, from(#656565), to(#404040));
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  -moz-box-shadow:0px 0px 3px #000;
+  -webkit-box-shadow:0px 0px 3px #000;
+  box-shadow:0px 0px 3px #000;
+  /* Text Styling */
+  color:#fff;
+  text-shadow:0px 0px 5px rgba(255, 255,255, 0.5);
+  font-family:'NotethisRegular', Verdana, Arial, sans-serif;
+  font-size:24px;
+  padding-top:1px;
+  margin-left:1.5%;
+}
+  
+.submit:hover, input#upl:focus {
+  background:-moz-radial-gradient(bottom, #656565, #404040 80%);
+  background:-webkit-gradient(radial, center bottom, 0, center 230, 250, from(#656565), to(#404040));
+}
 
+.submit:active {
+  -moz-box-shadow:0px 0px 2px #000;
+  -webkit-box-shadow:0px 0px 2px #000;
+  box-shadow:0px 0px 2px #000;
+  text-shadow:0px 0px 8px rgba(255, 255,255, 1);
+}
+</style>";
 /*	Copyright Deakin University 2007,2008
  *	Written by Adam Zammit - adam.zammit@deakin.edu.au
  *	For the Deakin Computer Assisted Research Facility: http://www.deakin.edu.au/dcarf/
@@ -224,7 +265,7 @@ foreach($verifiers as $v)
 }
 
 
-print "</table><p><input type=\"submit\" name=\"submit\" value=\"" .T_("Assign verifier to questionnaire") . "\"/></p></form>";
+print "</table><p><input class=\"submit\" type=\"submit\" name=\"submit\" value=\"" .T_("Dodjeli operatora formularu") . "\"/></p></form>";
 
 
 

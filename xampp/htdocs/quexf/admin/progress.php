@@ -52,7 +52,7 @@ $sql = "SELECT q.description, f1.c AS done, f2.c AS remain
 	
 $qs = $db->GetAll($sql);
 
-print "<table class='tclass'><tr><th>" . T_("Questionnaire") . "</th><th>" . T_("Done") . "</th><th>" . T_("Remain") . "</th><th>" . T_("Total forms imported") . "</th></tr>";
+print "<table class='tclass'><tr><th>" . T_("Formular") . "</th><th>" . T_("Završeno") . "</th><th>" . T_("Preostalo") . "</th><th>" . T_("Ukupno formulara dodano") . "</th></tr>";
 $done = 0;
 $remain = 0;
 $rtotal = 0;

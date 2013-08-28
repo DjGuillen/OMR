@@ -1,5 +1,26 @@
 <?
-
+print"<style type='text/css'>
+@font-face {
+  font-family: 'NotethisRegular';
+  src: url('../../css/fonts/Note_this.eot');
+  src: local('Note this Regular'), local('Notethis'), url('../../css/fonts/Note_this.ttf') format('truetype');
+}
+body{
+color: 	#E0E0E0 ;
+font-family:sans-serif;
+}
+p{
+font-size:18px;
+font-family:sans-serif;
+}
+h1{
+font-family:'NotethisRegular', Verdana, Arial, sans-serif;
+color:#000000;
+}
+h2{
+font-family:sans-serif;
+}
+</style>";
 /*	Copyright Deakin University 2007,2008,2009
  *	Written by Adam Zammit - adam.zammit@deakin.edu.au
  *	For the Deakin Computer Assisted Research Facility: http://www.deakin.edu.au/dcarf/
@@ -44,9 +65,9 @@ $sql = "SELECT q.description, f.fid, f.pfid
 
 $fs = $db->GetAll($sql);
 
-print "<h1>" . T_("Duplicate form listing") . "</h1><p>" . T_("Forms with the same PFID are duplicates") . "</p>";
+print "<h1>" . T_("Lista formulara koji se ponavljaju") . "</h1><p>" . T_("Formulari sa istim PFID-om su duplikati") . "</p>";
 
-xhtml_table($fs,array('description','fid','pfid'),array(T_("Questionnaire"),T_("Formid"),T_("PFID")));
+xhtml_table($fs,array('description','fid','pfid'),array(T_("Formular"),T_("Formid"),T_("PFID")));
 
 
 xhtml_foot();

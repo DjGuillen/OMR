@@ -1,5 +1,4 @@
 <?
-
 /*	Copyright Deakin University 2007,2008
  *	Written by Adam Zammit - adam.zammit@deakin.edu.au
  *	For the Deakin Computer Assisted Research Facility: http://www.deakin.edu.au/dcarf/
@@ -231,7 +230,7 @@ if (isset($_GET['done']))
 
 
 
-xhtml_head(T_("Set page layout"),true,array("../css/dragresize.css","../css/pagesetup.css"),array("../js/prototype-1.6.0.2.js","../js/dragresize.js","../js/pagelayout.js"));
+xhtml_head(T_("Set page layout"),true,array("../css/dragresize.css","../css/pagesetup.css","../css/page.css"),array("../js/prototype-1.6.0.2.js","../js/dragresize.js","../js/pagelayout.js"));
 
 print "<div id='content'>";
 
@@ -430,7 +429,7 @@ else
 
 	foreach($qs as $q)
 	{
-		print "<a href=\"?qid={$q['qid']}\">". T_("Page setup") . ": {$q['description']}</a>";
+		print "<a href=\"?qid={$q['qid']}\">". T_("Postavke stranice za formular ") . ": {$q['description']}</a>";
 		print "<br/>";
 	}
 
