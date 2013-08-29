@@ -77,14 +77,14 @@ xhtml_head(T_("OMR"),true,array("../css/style6.css"));
 <li><a href="?page=verifierquestionnaire.php"><? echo T_("Dodjeljivanje formulara"); ?></a></li></ul></li>
 </ul>
 <? if (ICR_ENABLED) { ?>
-<!--<li><p><? echo T_("ICR"); ?></p>
+<li><p><? echo T_("ICR"); ?></p>
 <ul class="bmenu">
 <ul><li><a href="?page=icrtrain.php"><? echo T_("Trening ICR"); ?></a></li>
 <li><a href="?page=icrmonitor.php"><? echo T_("Monitoring ICR trening procesa"); ?></a></li>
 <li><a href="?page=icrkb.php"><? echo T_("Unos i export ICR KB"); ?></a></li>
 <li><a href="?page=icrassign.php"><? echo T_("Dodjeljivanje ICR KB"); ?></a></li></ul></li>
 <? } ?>
-</ul>-->
+</ul>
 <li><p><? echo T_("Dodavanje"); ?></p>
 <ul class="bmenu">
 <ul><li><a href="?page=import.directory.php"><? echo T_("Dodavanje skeniranih formulara"); ?></a></li>
@@ -117,7 +117,10 @@ xhtml_head(T_("OMR"),true,array("../css/style6.css"));
 <ul><li><a href="?page=pagesetup.php"><? echo T_("Postavke stranice"); ?></a></li>
 <li><a href="?page=testconfig.php"><? echo T_("Test konfiguracije"); ?></a></li></ul></li>
 </ul></ul>
+		</br>
+		</br>
 </div>
+
 <?
 
 $page = "testconfig.php";

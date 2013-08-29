@@ -35,7 +35,7 @@ body{
 
 #menu {
   position : fixed;
-  width : 20%;
+  width : 22%;
   height : 100%;
   top : 24px;
   bottom : auto;
@@ -50,7 +50,7 @@ body{
   left : 25%;
   bottom : auto;
   width : 80%;
-  height : 100%;
+  height : 95%;
 }
 .embeddedobject {
   width:100%;

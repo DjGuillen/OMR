@@ -44,6 +44,10 @@ div.float {
  padding: 10px;
  border: 1px solid #666;
  height: 120px;
+ }
+body{
+width:90%;
+height:80%;
 }
 </style>
 

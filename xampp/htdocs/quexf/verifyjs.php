@@ -31,6 +31,7 @@ include("functions/functions.image.php");
 include("functions/functions.xhtml.php");
 include("functions/functions.database.php");
 
+
 	//if(isset($_SESSION['username']))
 	//{
 	//$_username=$_SESSION['username'];

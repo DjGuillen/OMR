@@ -54,4 +54,8 @@ define('TEMPORARY_DIRECTORY', dirname(__FILE__) . '\..\..\tmp');
 
 //Do not remove the following line:
 include(dirname(__FILE__) . '\config.default.php');
+
+//define('OCR_ENABLED', true);
+
+//define('TESSERACT_BIN', dirname(__FILE__) . '..\..\tesseract-ocr/tesseract.exe');
 ?>

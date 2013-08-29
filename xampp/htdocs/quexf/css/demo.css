@@ -54,7 +54,7 @@ h1 span{
 	opacity: 0.9;
 	text-transform: uppercase;
 	z-index: 9999;
-	position: relative;
+	position: absolute;
 	-moz-box-shadow: 1px 0px 2px #000;
 	-webkit-box-shadow: 1px 0px 2px #000;
 	box-shadow: 1px 0px 2px #000;
