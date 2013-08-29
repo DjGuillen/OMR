@@ -79,10 +79,10 @@ xhtml_head(T_("OMR"),true,array("../css/style6.css"));
 <? if (ICR_ENABLED) { ?>
 <li><p><? echo T_("ICR"); ?></p>
 <ul class="bmenu">
-<ul><li><a href="?page=icrtrain.php"><? echo T_("Trening ICR"); ?></a></li>
+<ul><li><a href="?page=icrtrain.php"><? echo T_("ICR Trening"); ?></a></li>
 <li><a href="?page=icrmonitor.php"><? echo T_("Monitoring ICR trening procesa"); ?></a></li>
-<li><a href="?page=icrkb.php"><? echo T_("Unos i export ICR KB"); ?></a></li>
-<li><a href="?page=icrassign.php"><? echo T_("Dodjeljivanje ICR KB"); ?></a></li></ul></li>
+<li><a href="?page=icrkb.php"><? echo T_("Unos i export ICR Baze Znanja"); ?></a></li>
+<li><a href="?page=icrassign.php"><? echo T_("Dodjeljivanje ICR Baze Znanja"); ?></a></li></ul></li>
 <? } ?>
 </ul>
 <li><p><? echo T_("Dodavanje"); ?></p>
