@@ -74,7 +74,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/quexf/admin/postavke.php">
                             <span class="ca-icon">U</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Postavke</h2>
