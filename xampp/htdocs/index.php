@@ -74,6 +74,7 @@
             <input type="text" name="username" class="username"/>
             <input type="password" name="password" class="password"/>
             <input type="submit" name="submit" class="submit" value="Prijavi se" />
+			<a href="forgot.php">Zaboravili ste šifru?</a>
         </form>
 </div>
 </div>	

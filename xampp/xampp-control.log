@@ -409,3 +409,187 @@
 6:35:16 AM  [main] 	Deinitializing Modules
 6:35:16 AM  [main] 	Deinitializing Control Panel
 
+11:58:56 PM  [main] 	Initializing Control Panel
+11:58:56 PM  [main] 	Windows Version:   32-bit
+11:58:56 PM  [main] 	XAMPP Version: ???
+11:58:56 PM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+11:58:56 PM  [main] 	You are not running with administrator rights! This will work for
+11:58:56 PM  [main] 	most application stuff but whenever you do something with services
+11:58:56 PM  [main] 	there will be a security dialogue or things will break! So think 
+11:58:56 PM  [main] 	about running this application with administrator rights!
+11:58:56 PM  [main] 	XAMPP Installation Directory: "c:\gitrepo\omr\xampp\"
+11:58:56 PM  [main] 	Checking for prerequisites
+11:58:56 PM  [main] 	All prerequisites found
+11:58:56 PM  [main] 	Initializing Modules
+11:58:56 PM  [main] 	The FileZilla module is disabled
+11:58:56 PM  [main] 	The Mercury module is disabled
+11:58:56 PM  [main] 	The Tomcat module is disabled
+11:58:56 PM  [main] 	Starting Check-Timer
+11:58:56 PM  [main] 	Control Panel Ready
+11:59:00 PM  [Apache] 	Attempting to start Apache app...
+11:59:00 PM  [Apache] 	Status change detected: running
+11:59:16 PM  [mysql] 	Attempting to start MySQL app...
+11:59:17 PM  [mysql] 	Status change detected: running
+12:00:54 AM  [mysql] 	Attempting to stop MySQL (PID: 5468)
+12:00:54 AM  [mysql] 	Status change detected: stopped
+12:00:56 AM  [Apache] 	Attempting to stop Apache (PID: 4020)
+12:00:56 AM  [Apache] 	Attempting to stop Apache (PID: 1468)
+12:00:56 AM  [Apache] 	Status change detected: stopped
+12:01:06 AM  [main] 	Deinitializing Modules
+12:01:06 AM  [main] 	Deinitializing Control Panel
+
+12:01:36 AM  [main] 	Initializing Control Panel
+12:01:36 AM  [main] 	Windows Version:   32-bit
+12:01:36 AM  [main] 	XAMPP Version: ???
+12:01:36 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+12:01:36 AM  [main] 	You are not running with administrator rights! This will work for
+12:01:36 AM  [main] 	most application stuff but whenever you do something with services
+12:01:36 AM  [main] 	there will be a security dialogue or things will break! So think 
+12:01:36 AM  [main] 	about running this application with administrator rights!
+12:01:36 AM  [main] 	XAMPP Installation Directory: "c:\gitrepo\omr\xampp\"
+12:01:36 AM  [main] 	Checking for prerequisites
+12:01:37 AM  [main] 	All prerequisites found
+12:01:37 AM  [main] 	Initializing Modules
+12:01:37 AM  [main] 	The FileZilla module is disabled
+12:01:37 AM  [main] 	The Mercury module is disabled
+12:01:37 AM  [main] 	The Tomcat module is disabled
+12:01:37 AM  [main] 	Starting Check-Timer
+12:01:37 AM  [main] 	Control Panel Ready
+12:01:39 AM  [Apache] 	Attempting to start Apache app...
+12:01:39 AM  [Apache] 	Status change detected: running
+12:01:44 AM  [mysql] 	Attempting to start MySQL app...
+12:01:44 AM  [mysql] 	Status change detected: running
+12:03:45 AM  [Apache] 	Attempting to stop Apache (PID: 4888)
+12:03:45 AM  [Apache] 	Attempting to stop Apache (PID: 5544)
+12:03:45 AM  [Apache] 	Status change detected: stopped
+12:03:46 AM  [mysql] 	Attempting to stop MySQL (PID: 4656)
+12:03:47 AM  [mysql] 	Status change detected: stopped
+12:03:49 AM  [main] 	Deinitializing Modules
+12:03:49 AM  [main] 	Deinitializing Control Panel
+
+12:07:54 AM  [main] 	Initializing Control Panel
+12:07:54 AM  [main] 	Windows Version:   32-bit
+12:07:54 AM  [main] 	XAMPP Version: ???
+12:07:54 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+12:07:54 AM  [main] 	You are not running with administrator rights! This will work for
+12:07:54 AM  [main] 	most application stuff but whenever you do something with services
+12:07:54 AM  [main] 	there will be a security dialogue or things will break! So think 
+12:07:54 AM  [main] 	about running this application with administrator rights!
+12:07:54 AM  [main] 	XAMPP Installation Directory: "c:\gitrepo\omr\xampp\"
+12:07:54 AM  [main] 	Checking for prerequisites
+12:07:59 AM  [main] 	All prerequisites found
+12:07:59 AM  [main] 	Initializing Modules
+12:07:59 AM  [main] 	The FileZilla module is disabled
+12:07:59 AM  [main] 	The Mercury module is disabled
+12:07:59 AM  [main] 	The Tomcat module is disabled
+12:07:59 AM  [main] 	Starting Check-Timer
+12:07:59 AM  [main] 	Control Panel Ready
+12:08:02 AM  [Apache] 	Attempting to start Apache app...
+12:08:07 AM  [Apache] 	Status change detected: running
+12:08:10 AM  [mysql] 	Attempting to start MySQL app...
+12:08:15 AM  [mysql] 	Status change detected: running
+12:10:49 AM  [Apache] 	Attempting to stop Apache (PID: 1496)
+12:10:49 AM  [Apache] 	Attempting to stop Apache (PID: 1852)
+12:10:49 AM  [Apache] 	Status change detected: stopped
+12:10:51 AM  [mysql] 	Attempting to stop MySQL (PID: 1884)
+12:10:51 AM  [mysql] 	Status change detected: stopped
+12:10:52 AM  [main] 	Deinitializing Modules
+12:10:52 AM  [main] 	Deinitializing Control Panel
+
+12:13:50 AM  [main] 	Initializing Control Panel
+12:13:50 AM  [main] 	Windows Version:   32-bit
+12:13:50 AM  [main] 	XAMPP Version: ???
+12:13:50 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+12:13:50 AM  [main] 	You are not running with administrator rights! This will work for
+12:13:50 AM  [main] 	most application stuff but whenever you do something with services
+12:13:50 AM  [main] 	there will be a security dialogue or things will break! So think 
+12:13:50 AM  [main] 	about running this application with administrator rights!
+12:13:50 AM  [main] 	XAMPP Installation Directory: "c:\gitrepo\omr\xampp\"
+12:13:50 AM  [main] 	Checking for prerequisites
+12:13:50 AM  [main] 	All prerequisites found
+12:13:50 AM  [main] 	Initializing Modules
+12:13:50 AM  [main] 	The FileZilla module is disabled
+12:13:50 AM  [main] 	The Mercury module is disabled
+12:13:50 AM  [main] 	The Tomcat module is disabled
+12:13:50 AM  [main] 	Starting Check-Timer
+12:13:50 AM  [main] 	Control Panel Ready
+12:13:52 AM  [Apache] 	Attempting to start Apache app...
+12:13:52 AM  [Apache] 	Status change detected: running
+12:13:53 AM  [Apache] 	Status change detected: stopped
+12:13:53 AM  [Apache] 	Error: Apache shutdown unexpectedly.
+12:13:53 AM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+12:13:53 AM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+12:13:53 AM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+12:13:53 AM  [Apache] 	and the Windows Event Viewer for more clues
+12:14:14 AM  [Apache] 	Attempting to start Apache app...
+12:14:15 AM  [Apache] 	Status change detected: running
+12:14:16 AM  [Apache] 	Status change detected: stopped
+12:14:16 AM  [Apache] 	Error: Apache shutdown unexpectedly.
+12:14:16 AM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+12:14:16 AM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+12:14:16 AM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+12:14:16 AM  [Apache] 	and the Windows Event Viewer for more clues
+12:14:17 AM  [Apache] 	Attempting to start Apache app...
+12:14:17 AM  [Apache] 	Status change detected: running
+12:14:18 AM  [Apache] 	Status change detected: stopped
+12:14:18 AM  [Apache] 	Error: Apache shutdown unexpectedly.
+12:14:18 AM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+12:14:18 AM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+12:14:18 AM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+12:14:18 AM  [Apache] 	and the Windows Event Viewer for more clues
+12:15:36 AM  [main] 	Deinitializing Modules
+12:15:36 AM  [main] 	Deinitializing Control Panel
+
+12:16:55 AM  [main] 	Initializing Control Panel
+12:16:55 AM  [main] 	Windows Version:   32-bit
+12:16:55 AM  [main] 	XAMPP Version: ???
+12:16:55 AM  [main] 	Control Panel Version: 3.1.0 3.1.0 [ Compiled: September 20th 2012 ]
+12:16:55 AM  [main] 	Running with Administrator rights - good!
+12:16:55 AM  [main] 	XAMPP Installation Directory: "c:\gitrepo\omr\xampp\"
+12:16:55 AM  [main] 	Checking for prerequisites
+12:16:55 AM  [main] 	All prerequisites found
+12:16:55 AM  [main] 	Initializing Modules
+12:16:55 AM  [main] 	The FileZilla module is disabled
+12:16:55 AM  [main] 	The Mercury module is disabled
+12:16:55 AM  [main] 	The Tomcat module is disabled
+12:16:55 AM  [main] 	Starting Check-Timer
+12:16:55 AM  [main] 	Control Panel Ready
+12:16:57 AM  [Apache] 	Attempting to start Apache app...
+12:16:58 AM  [Apache] 	Status change detected: running
+12:16:59 AM  [Apache] 	Status change detected: stopped
+12:16:59 AM  [Apache] 	Error: Apache shutdown unexpectedly.
+12:16:59 AM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+12:16:59 AM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+12:16:59 AM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+12:16:59 AM  [Apache] 	and the Windows Event Viewer for more clues
+12:24:17 AM  [Apache] 	Status change detected: running
+12:24:33 AM  [mysql] 	Status change detected: running
+12:24:42 AM  [mysql] 	Status change detected: stopped
+12:24:42 AM  [mysql] 	Error: MySQL shutdown unexpectedly.
+12:24:42 AM  [mysql] 	This may be due to a blocked port, missing dependencies, 
+12:24:42 AM  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+12:24:42 AM  [mysql] 	Check the "/xampp/mysql/data/mysql_error.log" file
+12:24:42 AM  [mysql] 	and the Windows Event Viewer for more clues
+12:28:17 AM  [mysql] 	Status change detected: running
+12:29:20 AM  [mysql] 	Status change detected: stopped
+12:29:20 AM  [mysql] 	Error: MySQL shutdown unexpectedly.
+12:29:20 AM  [mysql] 	This may be due to a blocked port, missing dependencies, 
+12:29:20 AM  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+12:29:20 AM  [mysql] 	Check the "/xampp/mysql/data/mysql_error.log" file
+12:29:20 AM  [mysql] 	and the Windows Event Viewer for more clues
+12:29:25 AM  [mysql] 	Status change detected: running
+4:14:36 AM  [Apache] 	Status change detected: stopped
+4:14:36 AM  [Apache] 	Error: Apache shutdown unexpectedly.
+4:14:36 AM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+4:14:36 AM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+4:14:36 AM  [Apache] 	Check the "/xampp/apache/logs/error.log" file
+4:14:36 AM  [Apache] 	and the Windows Event Viewer for more clues
+4:14:37 AM  [mysql] 	Status change detected: stopped
+4:14:37 AM  [mysql] 	Error: MySQL shutdown unexpectedly.
+4:14:37 AM  [mysql] 	This may be due to a blocked port, missing dependencies, 
+4:14:37 AM  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+4:14:37 AM  [mysql] 	Check the "/xampp/mysql/data/mysql_error.log" file
+4:14:37 AM  [mysql] 	and the Windows Event Viewer for more clues
+4:47:23 AM  [main] 	Deinitializing Modules
+4:47:23 AM  [main] 	Deinitializing Control Panel
+

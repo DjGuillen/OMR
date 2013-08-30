@@ -84,6 +84,33 @@ color:#FFFFFF;
 text-shadow:1px 1px 1px #6E6E6E;
 margin-top:5px;
 }
+
+.p3{
+font-family:'NotethisRegular', Verdana, Arial, sans-serif;
+font-size: 20px;
+color:#FFFFFF;
+text-shadow:1px 1px 1px #6E6E6E;
+margin-bottom:0px;
+margin-top:0px;
+}
+
+table{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+}
+
+.static{
+	font-size:18px;
+	color:#FFFFFF;
+	text-shadow:1px 1px 1px #6E6E6E;
+	font-family:sans-serif;
+}
+
+td code{
+	float:right;
+}
 </style>
 </head>
 <body>
@@ -151,19 +178,56 @@ margin-top:5px;
 				print "Došlo je do greške prilikom inserta";
 			}
 		}
+		else if(isset($_POST['oldpassword']))
+		{
+			$oldpass = $_POST['oldpassword'];
+			$newpassword = $_POST['newpassword'];
+			$newpassword1 = $_POST['newpassword1'];
+			$id = $_POST['id'];
+			if($info['password'] == sha1($oldpass))
+			{
+				if($newpassword == $newpassword1)
+				{
+					$db->execute("update users set password = '".sha1(mysql_real_escape_string($newpassword))."' where id = ".$id);
+					print "<p>Šifra uspješno promijenjena</p>";
+					print "<a href= 'postavke.php'>Povratak nazad</a>";
+				}
+				else
+				{
+					print "<p>Greška kod nove šifre: unesene šifre se ne slažu</p>";
+					print "<a href= 'postavke.php'>Povratak nazad</a>";
+				}
+			}
+			else
+			{
+				print "<p>Pogrešna šifra. Da biste promijenili šifru, morate unijeti ispravnu važeću šifru</p>";
+				print "<a href= 'postavke.php'>Povratak nazad</a>";
+			}
+		}
 		else
 		{
 	?>
 	<div id="container">
 	<p class="p1">Korisničke postavke</p>
-	<p class="p2">Potavke za: <?php print $username;?></p>
+	<p class="p2">Postavke za: <?php print $username;?></p>
 	<div id="prikaz">
 	<hr>
 	<table>
-		<tr><td>Korisničko ime: </td><td><?php print $info['username'];?></td><td><a href="postavke.php?mijenjajuser=<?php print $info['id']; ?>"><button>Promijeni</button></a></td></tr>
-		<tr><td>Korisnički e-mail: </td><td><?php print $info['email'];?></td><td><a href="postavke.php?mijenjajemail=<?php print $info['id']; ?>"><button>Promijeni</button></a></td></tr>
-		<tr><td>Tip korisnika: </td><td><?php print $info['type'];?></td></tr>
+		<tr><td class="static">Korisničko ime: </td><td><code><?php print $info['username'];?></code></td><td><a href="postavke.php?mijenjajuser=<?php print $info['id']; ?>"><button>Promijeni</button></a></td></tr>
+		<tr><td class="static">Korisnički e-mail: </td><td><code><?php print $info['email'];?></code></td><td><a href="postavke.php?mijenjajemail=<?php print $info['id']; ?>"><button>Promijeni</button></a></td></tr>
+		<tr><td class="static">Tip korisnika: </td><td><code><?php print $info['type'];?></code></td></tr>
 	</table>
+	<hr>
+	<p class="p3">Promjena šifre</p>
+	<form action="" method="post">
+	<table style="margin-top:20px;">
+		<tr><td class="static">Unesite staru šifru:</td><td><input type="password" name="oldpassword"></td></tr>
+		<tr><td class="static">Unesite novu šifru:</td><td><input type="password" name="newpassword"></td></tr>
+		<tr><td class="static">Unesite novu šifru ponovo:</td><td><input type="password" name="newpassword1"></td></tr>
+		<tr><td></td><td><input type="submit" value="Promijeni"></td>
+	</table>
+		<input type="hidden" name="id" value="<?php print $info['id'];?>">
+	</form>
 	</div>
 	</div>
 <?php
