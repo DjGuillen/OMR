@@ -30,6 +30,7 @@
 include_once("config.inc.php");
 include_once("db.inc.php");
 include_once("functions/functions.database.php");
+include("functions/functions.xhtml.php");
 				
 global $db;
 
@@ -180,17 +181,10 @@ background: #999966;
 </style>
 </head>
 <body>
-        <div class="container">
-            <div class="header">
-            <a href="../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
-                <span class="right">
-                    <a href="#"><strong>LOGOVANI STE KAO: <?php print $username;?></strong></a>
-                </span>
-                <div class="clr"></div>
-            </div>
+       <?php
 
-
-
+		show_header_operator($username);
+		?>
 <?
 
 

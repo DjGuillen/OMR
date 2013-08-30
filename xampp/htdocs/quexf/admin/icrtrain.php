@@ -37,6 +37,11 @@ global $db;
 <title><? print T_("ICR Training"); ?></title>
 <link rel='stylesheet' href='../css/table.css' type='text/css'></link>
 <style type='text/css'>
+@font-face {
+  font-family: 'NotethisRegular';
+  src: url('../../css/fonts/Note_this.eot');
+  src: local('Note this Regular'), local('Notethis'), url('../../css/fonts/Note_this.ttf') format('truetype');
+}
 div.float {
   float: left;
  margin: 0 0 10px 10px;
@@ -48,6 +53,22 @@ div.float {
 body{
 width:90%;
 height:80%;
+}
+.p1{
+font-family:'NotethisRegular', Verdana, Arial, sans-serif;
+font-size: 24px;
+color:#FFFFFF;
+text-shadow:1px 1px 1px #6E6E6E;
+margin-bottom:0px;
+}
+.p2{
+color:#FFFFFF;
+text-shadow:1px 1px 1px #6E6E6E;
+margin-top:5px;
+}
+hr{
+width:800px;
+margin-left:0px;
 }
 </style>
 
@@ -72,6 +93,9 @@ function toggle(eid)
 </script>
 </head>
 <body>
+<p class="p1">ICR Trening</p>
+<p class="p2">ICR treningom povćavate sposobnost sistema da prepozna napisane karaktere</p>
+<hr>
 <?
 
 

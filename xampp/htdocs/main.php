@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/quexf/admin/icrtab.php">
                             <span class="ca-icon">T</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Prepoznavanje teksta</h2>

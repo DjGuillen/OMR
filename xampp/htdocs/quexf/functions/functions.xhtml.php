@@ -208,5 +208,42 @@ function browser_ie()
         return false;
 }
 
+function show_header($user)
+{
+	?>
+	<div class="header">
+        <a href="../../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
+            <div class="home"><a href="../../main.php">Home</a></div>
+			<span class="right">
+                <a href="#"><strong>LOGOVANI STE KAO: <?php print $user;?></strong></a>
+            </span>
+        <div class="clr"></div>
+    </div>
+	<?php
+}
+
+function show_header_operator($user)
+{
+	?>
+	<style>
+		.header .home{
+		border-left:1px solid #505047;
+		width:30px;
+		float:left;
+		text-align:center;
+		padding-left:5px;
+		}
+	</style>
+	<div class="header">
+        <a href="../../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
+            <div class="home"><a href="index.php">Home</a></div>
+			<span class="right">
+                <a href="#"><strong>LOGOVANI STE KAO: <?php print $user;?></strong></a>
+            </span>
+        <div class="clr"></div>
+    </div>
+	<?php
+}
+
 
 ?>

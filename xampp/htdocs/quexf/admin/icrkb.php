@@ -35,7 +35,7 @@ if (isset($_GET['kb']))
 	die();
 }
 
-xhtml_head(T_("Import ICR KB from XML"),true,array("../css/table.css"));
+xhtml_head(T_("Dodavanje ICR baze znanja iz XML-a"),true,array("../css/table.css"));
 
 if (isset($_FILES['icrxml']))
 {
@@ -46,13 +46,13 @@ if (isset($_FILES['icrxml']))
 	if ($a)
 	{
 		if ($r)
-			print "<h2>" . T_("Successfully loaded ICR XML file") . "</h2>";
+			print "<h2>" . T_("Uspješno ubačen ICR XML file") . "</h2>";
 		else
-			print "<h2>" . T_("Failed to load ICR XML file") . "</h2>";
+			print "<h2>" . T_("Greška prilikom ubacivanja ICR XML file-a") . "</h2>";
 	}
 }
 
-print "<h2>" . T_("Import ICR KB from XML") . "</h2>";
+print "<h2>" . T_("Ubaci ICR bazu znanja iz XML-a") . "</h2>";
 
 $sql = "SELECT CONCAT('<a href=\"?kb=',IFNULL(kb,'KB'),'\">', description,'</a>') as link
 	FROM ocrkb";
@@ -63,14 +63,14 @@ $rs = $db->GetAll($sql);
 
 <form enctype="multipart/form-data" action="" method="post">
 	<p><input type="hidden" name="MAX_FILE_SIZE" value="1000000000" /></p>
-	<p><? echo T_("Select ICR KB XML file"); ?>: <input name="icrxml" type="file" /></p>
-	<p><input type="submit" value="<? echo T_("Upload XML"); ?>" /></p>
+	<p><? echo T_("Odaberi XML file ICR baze znanja"); ?>: <input name="icrxml" type="file" /></p>
+	<p><input type="submit" value="<? echo T_("Pošalji XML"); ?>" /></p>
 </form>
 
 <?
 
-print "<h2>" . T_("Export ICR KB to XML") . "</h2>";
-xhtml_table($rs,array("link"),array(T_("ICR KB")));
+print "<h2>" . T_("Eksport ICR baze znanja u XML") . "</h2>";
+xhtml_table($rs,array("link"),array(T_("ICR baza znanja")));
 
 xhtml_foot();
 ?>

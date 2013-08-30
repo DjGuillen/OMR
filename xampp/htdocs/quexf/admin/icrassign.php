@@ -94,7 +94,7 @@ if (isset($_GET['qid']))
 
 	$boxgrouptypes = $db->GetAll($sql);
 
-	xhtml_head(T_("Assign ICR KB to questionnaire"),false,array("../css/table.css"));
+	xhtml_head(T_("Dodijeli ICR bazu znanja formularu"),false,array("../css/table.css"));
 
 	$sql = "SELECT description
 		FROM questionnaires
@@ -102,7 +102,7 @@ if (isset($_GET['qid']))
 
 	$rs = $db->GetRow($sql);
 
-	print "<p><a href='?'>" . T_("Go back") . "</a></p>";
+	print "<p><a href='?'>" . T_("Povratak nazad") . "</a></p>";
 	print "<h1>" . $rs['description'] . "</h1>";
 
 
@@ -186,9 +186,10 @@ if (isset($_GET['qid']))
 	}
 
 	</script>
+	
 	</head>
 	<body>
-
+	
 	<?
 
 
@@ -198,7 +199,15 @@ if (isset($_GET['qid']))
 	print "<tr><th></th>";
 	foreach($boxgrouptypes as $v)
 	{
-		print "<th><a href=\"javascript:checkVid({$v['btid']})\">{$v['description']}</a></th>";
+		if($v['description'] === 'Text')
+		{
+			$desc = 'Tekst';
+		}
+		else
+		{
+			$desc = 'Broj';
+		}
+		print "<th><a href=\"javascript:checkVid({$v['btid']})\">{$desc}</a></th>";
 	}
 	print "</tr>";
 
@@ -225,11 +234,42 @@ if (isset($_GET['qid']))
 	}
 
 
-	print "</table><p><input type=\"hidden\" name=\"qid\" value=\"$qid\"/><input type=\"submit\" name=\"submit\" value=\"" . T_("Assign ICR KB to questionnaire") . "\"/></p></form>";
+	print "</table><p><input type=\"hidden\" name=\"qid\" value=\"$qid\"/><input type=\"submit\" name=\"submit\" value=\"" . T_("Dodijeli ICR bazu znanja formularu") . "\"/></p></form>";
 
 }
 else
 {
+	?>
+	<style>
+		@font-face {
+		  font-family: 'NotethisRegular';
+		  src: url('../../css/fonts/Note_this.eot');
+		  src: local('Note this Regular'), local('Notethis'), url('../../css/fonts/Note_this.ttf') format('truetype');
+		}
+		.p1{
+		font-family:'NotethisRegular', Verdana, Arial, sans-serif;
+		font-size: 24px;
+		color:#FFFFFF;
+		text-shadow:1px 1px 1px #6E6E6E;
+		margin-bottom:0px;
+		}
+		.p2{
+		color:#FFFFFF;
+		text-shadow:1px 1px 1px #6E6E6E;
+		margin-top:5px;
+		width:80%;
+		}
+		hr{
+		width:800px;
+		margin-left:0px;
+		}
+	</style>
+	<p class="p1">Dodjela ICR baze znanja formularu</p>
+	<p class="p2">Odaberite formular kojem želite dodijeliti bazu znanja, tako da omogućite automatsko prepoznavanje rukopisa. Nakon toga odabrite koju vrstu prepoznavanja želite omogućiti - tekst ili brojevi.</p>
+	<hr>
+	
+	<?php
+
 	//form to choose a questionnaire/form
 	$sql = "SELECT qid,description
 		FROM questionnaires";
@@ -238,7 +278,7 @@ else
 
 	foreach($qs as $q)
 	{
-		print "<a href=\"?qid={$q['qid']}\">". T_("Assign ICR KB to questionnaire") . ": {$q['description']}</a>";
+		print "<a href=\"?qid={$q['qid']}\">". T_("Dodijeli ICR bazu znanja formularu") . ": {$q['description']}</a>";
 		print "<br/>";
 	}
 

@@ -380,14 +380,16 @@ if (isset($_GET['assign']))
    <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
    <title>OMR</title>
  </head>
- <body>
-             <div class='header'>
-            <a href='../index.php?logout=1'><strong>&laquo; Odjavi se</strong></a>
-                <span class='right'>
-                    <a href='#'><strong>LOGOVANI STE KAO:". $_SESSION['username']."</strong></a>
-                </span>
-                <div class='clr'></div>
-            </div>";
+ <body>";
+	if(isset($_SESSION['username']))
+	{
+       		$_username = $_SESSION['username'];
+			show_header_operator($_username);
+	}
+	else
+	{
+		show_header_operator('null');
+	}
 		print "<p class='p1'>NEMA NOVIH ZADATAKA</p>";
 		print "<p class='p1'><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\">Reload stranice za provjeru novog zadatka!</a></p>";
 		unset($_SESSION['boxgroups']);
@@ -414,14 +416,16 @@ if ($fid == false)
    <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
    <title>OMR</title>
  </head>
- <body>
-             <div class='header'>
-            <a href='../index.php?logout=1'><strong>&laquo; Odjavi se</strong></a>
-                <span class='right'>
-                    <a href='#'><strong>LOGOVANI STE KAO:". $_SESSION['username']."</strong></a>
-                </span>
-                <div class='clr'></div>
-            </div>";
+ <body>";
+	if(isset($_SESSION['username']))
+	{
+       		$_username = $_SESSION['username'];
+			show_header_operator($_username);
+	}
+	else
+	{
+		show_header_operator('null');
+	}
 			
 	//xhtml_head(T_("Verify: Assign form"),true,array("css/table.css"));
 	print "<div id=\"links\">";
@@ -641,14 +645,16 @@ print "<html>
    <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
    <title>OMR</title>
  </head>
- <body>
-             <div class='header'>
-            <a href='../index.php?logout=1'><strong>&laquo; Odjavi se</strong></a>
-                <span class='right'>
-                    <a href='#'><strong>LOGOVANI STE KAO:". $_SESSION['username']."</strong></a>
-                </span>
-                <div class='clr'></div>
-            </div>";
+ <body>";
+	if(isset($_SESSION['username']))
+	{
+       		$_username = $_SESSION['username'];
+			show_header_operator($_username);
+	}
+	else
+	{
+		show_header_operator('null');
+	}
 	print "<p class='p1'>Zahtjevana polja su ispunjena</p>";
 	print "<div id=\"links\">";
 	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?complete=complete\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\"><p class='p1'>Pošalji kompletiran formular u bazu</p></a></p>";
@@ -1294,17 +1300,18 @@ color:#FFFFFF;
 </head>
 <body>
 
-        <div class="container">
-            <div class="header">
-            <a href="../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
-                <span class="right">
-                    <a href="#"><strong>LOGOVANI STE KAO: <?php print $_SESSION['username'];?></strong></a>
-                </span>
-                <div class="clr"></div>
-            </div>
 
 <?
-
+	if(isset($_SESSION['username']))
+	{
+       		$_username = $_SESSION['username'];
+			show_header_operator($_username);
+	}
+	else
+	{
+		show_header_operator('null');
+	}
+	
 $zoom = 1;
 if (isset($_GET['zoom'])) $zoom = intval($_GET['zoom']);
 

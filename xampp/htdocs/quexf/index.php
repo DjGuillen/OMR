@@ -87,7 +87,7 @@ session_start();
                         </a>
                     </li>
 					<li>
-                        <a href="#">
+                        <a href="postavke.php">
                             <span class="ca-icon">U</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Postavke</h2>
