@@ -102,7 +102,7 @@ print "<li>" . T_("300DPI Resolution") . "</li></ul></li></ul>";
 <!--Učitavanje liste predmeta iz baze -->
 <p><input type="checkbox" name="test" value="test" id="test">Formular koji želite dodati predstavlja test<br></p>
 <?php
-$sql="SELECT * FROM subjects ORDER BY name ASC";
+$sql="SELECT * FROM sub ORDER BY name ASC";
 $result=mysql_query($sql);
 ?>
 <div id="subject" style="display:none" name="subject">
@@ -111,7 +111,7 @@ $result=mysql_query($sql);
 <?php
 while($rows=mysql_fetch_array($result)){
 ?>
-<option value="<?php echo $rows['name'] ?>"><?php echo $rows['name'] ?></option>
+<option value="<?php echo $rows['id'] ?>"><?php echo $rows['name'] ?></option>
 <?php
 }
  mysql_free_result($result);

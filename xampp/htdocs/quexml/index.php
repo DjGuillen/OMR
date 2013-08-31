@@ -11,7 +11,7 @@
 	<body>
 <?php
 include "quexmlpdf.php";
-
+include ("../quexf/functions/functions.xhtml.php");
 if(isset($_FILES['userfile']))
 {
 	if((!is_uploaded_file($_FILES['userfile']['tmp_name']))) {
@@ -65,16 +65,14 @@ else
 	if(isset($_SESSION['username']))
 	{
 	$_username=$_SESSION['username'];
+	show_header($_username);
+	}
+	else
+	{
+		show_header('null');
 	}
 	?>
-	     <div class="header">
-          <a href="../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
-                <span class="right">
-                    <a href="#"><strong>LOGOVANI STE KAO: <?php print $_username;?></strong></a>
-                </span>
-                <div class="clr"></div>
-            </div>
-			
+	    
 	<div class="container">			
 	<h1>XML u PDF sa vrijednostima za obradu formulara</h1>
 	<p>Ako je file XML validan .ZIP file sa formularom u .PDF i .XML formatu će biti kreiran za <a href='http://localhost/quexf/admin/index.php'>Obradu Formulara</a></p>

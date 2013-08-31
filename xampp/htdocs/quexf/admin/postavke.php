@@ -1,6 +1,6 @@
 <?
 /*	
-	TAB ZA PRIKAZ ICR OPCIJA
+	
  */
 
 /**
