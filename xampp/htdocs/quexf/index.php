@@ -47,12 +47,14 @@ session_start();
 	{
 	$_username=$_SESSION['username'];
 	}
+	$result = $db->GetRow('select count(*) as nb_new_pm from pm where ((user1="'.$_SESSION['userid'].'" and user1read="no") or (user2="'.$_SESSION['userid'].'" and user2read="no")) and id2="1"');
 ?>
         <div class="container">
             <div class="header">
             <a href="../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
-                <span class="right">
-                    <a href="#"><strong>LOGOVANI STE KAO: <?php print $_username;?></strong></a>
+                 <div class="home"><a href="poruke.php">Msg: <?php print $result['nb_new_pm'];?></a></div>
+				<span class="right">                   
+					<a href="#"><strong>LOGOVANI STE KAO: <?php print $_username;?></strong></a>
                 </span>
                 <div class="clr"></div>
             </div>
@@ -96,7 +98,7 @@ session_start();
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="poruke.php">
                             <span class="ca-icon">@</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Poruke</h2>

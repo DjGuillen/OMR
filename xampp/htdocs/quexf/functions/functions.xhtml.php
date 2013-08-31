@@ -210,10 +210,13 @@ function browser_ie()
 
 function show_header($user)
 {
+	include("../db.inc.php");
+	$result = $db->GetRow('select count(*) as nb_new_pm from pm where ((user1="'.$_SESSION['userid'].'" and user1read="no") or (user2="'.$_SESSION['userid'].'" and user2read="no")) and id2="1"');
 	?>
 	<div class="header">
         <a href="../../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
             <div class="home"><a href="../../main.php">Home</a></div>
+			<div class="home"><a href="poruke.php">Msg: <?php print $result['nb_new_pm'];?></a></div>
 			<span class="right">
                 <a href="#"><strong>LOGOVANI STE KAO: <?php print $user;?></strong></a>
             </span>
@@ -224,11 +227,12 @@ function show_header($user)
 
 function show_header_operator($user)
 {
+	include("db.inc.php");
+	$result = $db->GetRow('select count(*) as nb_new_pm from pm where ((user1="'.$_SESSION['userid'].'" and user1read="no") or (user2="'.$_SESSION['userid'].'" and user2read="no")) and id2="1"');
 	?>
 	<style>
 		.header .home{
 		border-left:1px solid #505047;
-		width:30px;
 		float:left;
 		text-align:center;
 		padding-left:5px;
@@ -237,6 +241,7 @@ function show_header_operator($user)
 	<div class="header">
         <a href="../../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
             <div class="home"><a href="index.php">Home</a></div>
+			<div class="home"><a href="poruke.php">Msg: <?php print $result['nb_new_pm'];?></a></div>
 			<span class="right">
                 <a href="#"><strong>LOGOVANI STE KAO: <?php print $user;?></strong></a>
             </span>

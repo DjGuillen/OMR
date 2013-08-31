@@ -20,7 +20,7 @@ $info = $db->GetRow("select * from users where username = '".mysql_real_escape_s
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
       <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title><? echo T_("Review Form"); ?> - <? print "FID:$fid"; ?></title>
+<title><? echo T_("Postavke"); ?></title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <link rel="stylesheet" type="text/css" href="css/demo1.css" />

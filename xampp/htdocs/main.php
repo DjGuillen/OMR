@@ -83,7 +83,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/quexf/admin/poruke.php">
                             <span class="ca-icon">@</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Poruke</h2>

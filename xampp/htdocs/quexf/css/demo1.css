@@ -86,3 +86,9 @@ h1 span{
 	float: none;
 	display: inline;
 }
+.header .home{
+	border-left:1px solid #505047;
+	float:left;
+	text-align:center;
+	padding-left:5px;
+}
