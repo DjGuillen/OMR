@@ -105,7 +105,16 @@ session_start();
                                 <h3 class="ca-sub">Pošaljite poruku korisnicima sistema</h3>
                             </div>
                         </a>
-                    </li>					
+                    </li>
+					<li>
+                        <a href="import.directory.php">
+                            <span class="ca-icon">@</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Upload formi za pregled</h2>
+                                <h3 class="ca-sub">Uploadujte skenirane forme za pregled</h3>
+                            </div>
+                        </a>
+                    </li>						
                 </ul>
             </div><!-- content -->
         </div>
