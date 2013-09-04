@@ -11,11 +11,14 @@
  </head>
 	<body>
 	<?php
+	include("session.php");
 	session_start();
 	if(isset($_SESSION['username']))
 	{
 	$_username=$_SESSION['username'];
-	}
+	session_validate();
+	if(isset($_SESSION['type'])  && $_SESSION['type'] == "administrator")
+	{
 	?>
         <div class="container">
             <div class="header">
@@ -30,7 +33,7 @@
                 <ul class="ca-menu">
                     <li>
                         <a href="http://localhost/quexml/index.php">
-                            <span class="ca-icon">A</span>
+                            <span class="ca-icon">+</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Kreiranje formulara</h2>
                                 <h3 class="ca-sub">Dodavanje novog formulara na osnovu .xml file-a</h3>
@@ -95,6 +98,17 @@
             </div><!-- content -->
         </div>
        <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>-->
-	
+	<?php
+	}
+	else
+	{
+		print "<h1>Nemate pravo pristupa. Logujte se kao administrator</h1>";
+	}
+	}
+	else
+	{
+		header("Location:index.php");
+	}
+	?>
 	</body>
 </html>

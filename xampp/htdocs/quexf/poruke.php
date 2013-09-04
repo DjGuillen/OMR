@@ -1,9 +1,12 @@
 <?php
-    session_start();
+    include("../session.php");
+	session_start();
 	if(isset($_SESSION['username']))
 	{
-	$username=$_SESSION['username'];	
-	}
+		$username=$_SESSION['username'];
+		session_validate();
+	if(isset($_SESSION['type'])  && $_SESSION['type'] == "operator")
+	{
 	include_once("db.inc.php");
 	include("functions/functions.xhtml.php");
 ?>
@@ -129,4 +132,16 @@ if(intval(mysql_num_rows($req2))==0)
 </table>
 </div>
 </div>
+<?php
+}
+else
+	{
+		print "<h1>Nemate pravo pristupa. Logujte se kao operator</h1>";
+	}
+	}
+	else
+	{
+		header("Location:../index.php");
+	}
+?>
 </body></html>

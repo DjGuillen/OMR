@@ -24,7 +24,14 @@
 
 
 //verifier
-
+include("../session.php");
+	session_start();
+	if(isset($_SESSION['username']))
+	{
+		$_username=$_SESSION['username'];
+		session_validate();
+	if(isset($_SESSION['type'])  && $_SESSION['type'] == "operator")
+	{
 include_once("config.inc.php");
 include_once("db.inc.php");
 include("functions/functions.image.php");
@@ -176,8 +183,6 @@ function bgidtocss($zoom = 1,$fid,$pid)
 
 }
 
-session_start();
-
 $vid = get_vid();
 
 if($vid == false){ print T_("Please log in"); exit;}
@@ -307,8 +312,12 @@ $sql1 = mysql_query("SELECT COUNT(s.qid) num  FROM questionnaires q LEFT JOIN su
 	unset($_SESSION['pages']);
 	unset($_SESSION['boxes']);
 	$usr=$_SESSION['username'];
+	$usrid = $_SESSION['userid'];
+		$usrtype = $_SESSION['type'];
 	session_unset();
 	$_SESSION['username']=$usr;
+	$_SESSION['userid'] = $usrid;
+		$_SESSION['type'] = $usrtype;
 
 	$sql = "UPDATE forms
 		SET done = 1
@@ -359,15 +368,23 @@ if (isset($_GET['clear']))
 	unset($_SESSION['pages']);
 	unset($_SESSION['boxes']);
 	$usr=$_SESSION['username'];
+	$usrid = $_SESSION['userid'];
+		$usrtype = $_SESSION['type'];
 	session_unset();
 	$_SESSION['username']=$usr;
+	$_SESSION['userid'] = $usrid;
+		$_SESSION['type'] = $usrtype;
 }
 
 if (isset($_GET['assign']))
 {
-    $usr=$_SESSION['username'];		
+    $usr=$_SESSION['username'];	
+$usrid = $_SESSION['userid'];
+		$usrtype = $_SESSION['type'];	
 	session_unset();
 	$_SESSION['username']=$usr;
+	$_SESSION['userid'] = $usrid;
+		$_SESSION['type'] = $usrtype;
 	$fid = assign_to($vid);
 	if ($fid == false) 
 	{
@@ -395,9 +412,13 @@ if (isset($_GET['assign']))
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['boxes']);
 		unset($_SESSION['pages']);
-        $usr=$_SESSION['username'];		
+        $usr=$_SESSION['username'];	
+$usrid = $_SESSION['userid'];
+		$usrtype = $_SESSION['type'];		
 		session_unset();
 		$_SESSION['username']=$usr;
+		$_SESSION['userid'] = $usrid;
+		$_SESSION['type'] = $usrtype;
 		xhtml_foot();
 		exit();
 	}
@@ -532,8 +553,12 @@ if (!isset($_SESSION['boxes'])) {
 		unset($_SESSION['pages']);
 		unset($_SESSION['boxes']);
 		$usr=$_SESSION['username'];
+		$usrid = $_SESSION['userid'];
+		$usrtype = $_SESSION['type'];
 		session_unset();
 		$_SESSION['username']=$usr;
+		$_SESSION['userid'] = $usrid;
+		$_SESSION['type'] = $usrtype;
 		xhtml_foot();
 		exit();
 	}
@@ -1400,7 +1425,16 @@ print "</div>";
 
 }
 
-
+}
+else
+	{
+		print "<h1>Nemate pravo pristupa. Logujte se kao operator</h1>";
+	}
+	}
+	else
+	{
+		header("Location:../index.php");
+	}
 ?>
 
 

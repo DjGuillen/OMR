@@ -314,7 +314,7 @@ else if (isset($_GET['char']))
 
 	$nr = count($rs);
 
-	print "<p>" . T_("Make sure the letter in the box matches the image. If you do not want to import a box, click on it to disable it (click again to enable).") . "</p>";
+	print "<p>" . T_("Slovo na slici treba da se slaže sa slovom ispod. Ako ne želite da ga uključite, kliknite da poništite trening tog slova.") . "</p>";
 	print "<form action='?' method='post'><p>";
 	
 	foreach($rs as $r)
@@ -331,7 +331,7 @@ else if (isset($_GET['char']))
 		print "<div class='float' id='div_".$pid."_".$fid."_".$tlx."_".$tly."_".$brx."_".$bry."_".$vid."_".$bid."_".$char."' onclick=\"toggle('".$pid."_".$fid."_".$tlx."_".$tly."_".$brx."_".$bry."_".$vid."_".$bid."_".$char."')\"><img alt='ocrimage' src='../showpage.php?pid=$pid&amp;bid=$bid&amp;fid=$fid'/><br/><p><input id='input_".$pid."_".$fid."_".$tlx."_".$tly."_".$brx."_".$bry."_".$vid."_".$bid."_".$char."' name='".$pid."_".$fid."_".$tlx."_".$tly."_".$brx."_".$bry."_".$vid."_".$bid."_".$char."' type='text' value='{$r['val']}' size='3' /></p></div>";
 
 	}
-	print "</p><p><label for='text'>" . T_("Description for knowledge base:") . "</label><input name='text' id='text' type='text' value='$desc'/></p><p><input name='submit' id='submit' type='submit' value='" . T_("Train") . "'/></p></form>";
+	print "</p><p><label for='text'>" . T_("Opis baze znanja:") . "</label><input name='text' id='text' type='text' value='$desc'/></p><p><input name='submit' id='submit' type='submit' value='" . T_("Treniraj") . "'/></p></form>";
 
 }
 else if (isset($_GET['vid']))
@@ -364,7 +364,7 @@ else if (isset($_GET['vid']))
 	$qid = intval($_GET['qid']);
 
 	$sql = "SELECT f.val,count(*) as c, CONCAT('<input type=\"checkbox\" name=\"char_', f.val, '\" value=\"',f.val,'\"/>') as checkbox,
-		CONCAT('<a href=\"?qid=$qid&amp;char=', f.val ,'$verif\">" . T_("Manually train") . "</a>') as link
+		CONCAT('<a href=\"?qid=$qid&amp;char=', f.val ,'$verif\">" . T_("Treniraj ručno") . "</a>') as link
 		FROM formboxverifychar as f
 		JOIN boxes as b ON (b.bid = f.bid)
 		JOIN boxgroupstype as bg ON (bg.bgid = b.bgid and (bg.btid = 3 or bg.btid = 4))
@@ -379,10 +379,10 @@ else if (isset($_GET['vid']))
 
 	$rs = $db->GetAll($sql);	
 
-	print "<p>" . T_("Please choose which characters to include in training") . "</p>";
+	print "<p>" . T_("Odaberite karaktere koji će se uključiti u trening") . "</p>";
 
 	print "<form action='?' method='get'>";
-	xhtml_table($rs,array('val','c','checkbox','link'),array(T_("Character"),T_("Number of instances"),T_("Include in training?"),T_("Manually train")));
+	xhtml_table($rs,array('val','c','checkbox','link'),array(T_("Karakter"),T_("Broj instanci"),T_("Uključiti u trening?"),T_("Treniraj ručno")));
 	print "<input type='hidden' name='qid' value='$qid'/>";
 	foreach ($_GET as $key => $val)
 	{
@@ -392,7 +392,7 @@ else if (isset($_GET['vid']))
 		}
 	}
 	print "<input type='hidden' name='vid' value='$qid'/>";
-	print "<input type='submit' name='submit' value='" . T_("Start training process in background") . "'/>";
+	print "<input type='submit' name='submit' value='" . T_("Pokreni proces treniranja u pozadini") . "'/>";
 	print "</form>";
 
 	
@@ -410,13 +410,13 @@ else if (isset($_GET['qid']))
 
 	$rs = $db->GetAll($sql);
 
-	print "<p>" . T_("Please choose which verifiers to include in training") . "</p>";
+	print "<p>" . T_("Odaberite operatera da se uključi u trening") . "</p>";
 
 	print "<form action='?' method='get'>";
-	xhtml_table($rs,array('description','c','checkbox'),array(T_("Verifier"),T_("Number of forms"),T_("Include in training?")));
+	xhtml_table($rs,array('description','c','checkbox'),array(T_("Operater"),T_("Broj formi"),T_("Uključiti u trening?")));
 	print "<input type='hidden' name='qid' value='$qid'/>";
 	print "<input type='hidden' name='vid' value='$qid'/>";
-	print "<input type='submit' name='submitc' value='" . T_("Continue training") . "'/>";
+	print "<input type='submit' name='submitc' value='" . T_("Nastavi trening") . "'/>";
 	print "</form>";
 }
 else

@@ -11,6 +11,7 @@
 	<body>
 <?php
 include "quexmlpdf.php";
+include("../session.php");
 include ("../quexf/functions/functions.xhtml.php");
 if(isset($_FILES['userfile']))
 {
@@ -65,14 +66,21 @@ else
 	if(isset($_SESSION['username']))
 	{
 	$_username=$_SESSION['username'];
-	show_header($_username);
-	}
-	else
+	session_validate();
+	if(isset($_SESSION['type'])  && $_SESSION['type'] == "administrator")
 	{
-		show_header('null');
-	}
+	include("../quexf/db.inc.php");
+	$result = $db->GetRow('select count(*) as nb_new_pm from pm where ((user1="'.$_SESSION['userid'].'" and user1read="no") or (user2="'.$_SESSION['userid'].'" and user2read="no")) and id2="1"');
 	?>
-	    
+	<div class="header">
+        <a href="../../index.php?logout=1"><strong>&laquo; Odjavi se</strong></a>
+            <div class="home"><a href="../../main.php">Home</a></div>
+			<div class="home"><a href="poruke.php">Msg: <?php print $result['nb_new_pm'];?></a></div>
+			<span class="right">
+                <a href="#"><strong>LOGOVANI STE KAO: <?php print $_username;?></strong></a>
+            </span>
+        <div class="clr"></div>
+    </div>	    
 	<div class="container">			
 	<h1>XML u PDF sa vrijednostima za obradu formulara</h1>
 	<p>Ako je file XML validan .ZIP file sa formularom u .PDF i .XML formatu će biti kreiran za <a href='http://localhost/quexf/admin/index.php'>Obradu Formulara</a></p>
@@ -104,7 +112,21 @@ else
 			<input class="upl" type="submit" value="Upload File" />
 		</form>
 	</div>
+	
 	</body>
+	
+	<?php 
+	}
+	else
+	{
+		print "<h1>Nemate pravo pristupa. Logujte se kao administrator</h1>";
+	}
+	}
+	else
+	{
+		header("Location:../index.php");
+	}
+	?>
 	</html>
 	<?php
 }

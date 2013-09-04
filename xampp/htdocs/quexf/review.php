@@ -1,9 +1,12 @@
 <?
-    session_start();
+    include("../session.php");
+	session_start();
 	if(isset($_SESSION['username']))
 	{
-	$username=$_SESSION['username'];	
-	}
+		$_username=$_SESSION['username'];
+		session_validate();
+	if(isset($_SESSION['type'])  && $_SESSION['type'] == "operator")
+	{
 /*	Copyright Deakin University 2007,2008
  *	Written by Adam Zammit - adam.zammit@deakin.edu.au
  *	For the Deakin Computer Assisted Research Facility: http://www.deakin.edu.au/dcarf/
@@ -180,10 +183,13 @@ background: #999966;
 
 </style>
 </head>
-<body>
+<body>        
+<div class="container">
+
        <?php
 
-		show_header_operator($username);
+        show_header_operator($_username);
+		print "</div>";
 		?>
 <?
 
@@ -264,7 +270,16 @@ print "</div>";
 print "</div>";
 
 
-
+}
+else
+	{
+		print "<h1>Nemate pravo pristupa. Logujte se kao operator</h1>";
+	}
+	}
+	else
+	{
+		header("Location:../index.php");
+	}
 
 ?>
 

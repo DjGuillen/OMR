@@ -252,7 +252,7 @@ function newquestionnaire($filename,$desc = "",$type="pngmono"){
 	
 			}
 			else
-				print T_("INVALID - IGNORING BLANK PAGE");
+				print T_("Greška - ignorisanje prazne stranice");
 
 			unset($data);
 			unset($image);
@@ -269,7 +269,7 @@ function newquestionnaire($filename,$desc = "",$type="pngmono"){
 	if ($pages <= 0)
 	{
 		$db->FailTrans();
-		print T_("Failed to import as no pages were detected");
+		print T_("Neuspjelo importovanje jer nisu detektovane nove stranice");
 	}
 	
 
@@ -655,7 +655,7 @@ function import($filename,$description = false)
 	
 
 	//Import the file
-	print T_("Importing") . ": $filename";
+	print T_("Importovanje") . ": $filename";
 
 
 
@@ -690,7 +690,7 @@ function import($filename,$description = false)
 	$file = $tmp . $n . ".png";
 	while (file_exists($file))
 	{
-		print T_("Finding qid") . "...";
+		print T_("Pronalaženje qid") . "...";
 
 		//open file
 		$data = file_get_contents($file);
@@ -752,7 +752,7 @@ function import($filename,$description = false)
 
 	if ($qid != "")
 	{
-		print T_("Got qid") . ": $qid...";
+		print T_("Dobavljen qid") . ": $qid...";
 
 		//create form entry in DB
 		$sql = "INSERT INTO forms (fid,qid,description)
@@ -808,7 +808,7 @@ function import($filename,$description = false)
 
 				if ($pid)
 				{
-					print T_("Processing pid") . ": $pid...";
+					print T_("Procesiranje pid-a") . ": $pid...</br>";
 	
 					//get the page id from the page table
 					$sql = "SELECT * FROM pages
@@ -1287,7 +1287,7 @@ function import_directory($dir)
 					//print "<p>$file</p>";
 			                $r = import("$dir/$file");
 					if ($r == false)
-						print T_("File already in database");
+						print T_("File već postoji u bazi<br/>");
 					 //unlink($file);
 					 //rename("$dir/$file","$dir/$file.done");
 				}

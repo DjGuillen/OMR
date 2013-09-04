@@ -42,11 +42,14 @@ include("db.inc.php");
 
 /*xhtml_head();
 xhtml_head(T_("Verify"),true,array("css/demo.css"),array("css/style7.css"));*/
-session_start();
+include("../session.php");
+	session_start();
 	if(isset($_SESSION['username']))
 	{
-	$_username=$_SESSION['username'];
-	}
+		$_username=$_SESSION['username'];
+		session_validate();
+	if(isset($_SESSION['type'])  && $_SESSION['type'] == "operator")
+	{
 	$result = $db->GetRow('select count(*) as nb_new_pm from pm where ((user1="'.$_SESSION['userid'].'" and user1read="no") or (user2="'.$_SESSION['userid'].'" and user2read="no")) and id2="1"');
 ?>
         <div class="container">
@@ -108,7 +111,7 @@ session_start();
                     </li>
 					<li>
                         <a href="import.directory.php">
-                            <span class="ca-icon">@</span>
+                            <span class="ca-icon">A</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Upload formi za pregled</h2>
                                 <h3 class="ca-sub">Uploadujte skenirane forme za pregled</h3>
@@ -146,6 +149,16 @@ if($nbleft['NbLeft']>0){
 }
 ?>
 <?
+}
+else
+	{
+		print "<h1>Nemate pravo pristupa. Logujte se kao operator</h1>";
+	}
+	}
+	else
+	{
+		header("Location:../index.php");
+	}
 xhtml_foot();
 
 //display list of jobs

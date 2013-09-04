@@ -16,12 +16,12 @@
 		}
 //echo $_SESSION['username'];		
 // LOGIN
-	if (isset($_SESSION['username'])){
+	if (isset($_SESSION['username'])&&isset($_SESSION['type'])){
 		$username = $_SESSION['username'];
 		$t=mysql_query("select type from users where username='".mysql_real_escape_string($username)."';");
 		    $d = mysql_fetch_assoc($t);
 			if($d['type']=="administrator"){
-		    header("Location:main.php");
+			header("Location:main.php");
 		    }
 		    else if($d['type']=="operator"){
 		    header("Location:quexf/index.php");
@@ -40,6 +40,7 @@
 				    if($data['password'] == $password){
 					    $_SESSION['username'] = $_REQUEST['username'];
 						$_SESSION['userid'] = $data['id'];
+						$_SESSION['type'] = $data['type'];
 		                    $t=mysql_query("select type from users where username='".mysql_real_escape_string($username)."';");
 		                        $d = mysql_fetch_assoc($t);
 							    if($d['type']=="administrator"){

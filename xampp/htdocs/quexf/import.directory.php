@@ -88,11 +88,14 @@ font-family:sans-serif;
  *	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
-session_start();
+include("../session.php");
+	session_start();
 	if(isset($_SESSION['username']))
 	{
-	$username=$_SESSION['username'];	
-	}
+		$username=$_SESSION['username'];
+		session_validate();
+	if(isset($_SESSION['type'])  && $_SESSION['type'] == "operator")
+	{
 
 include("functions/functions.import.php");
 include("functions/functions.xhtml.php");
@@ -198,7 +201,7 @@ else
 	</form>
 	</div>
 	<form enctype="multipart/form-data" action="?" method="post">
-	<p><? echo T_("Folder na serveru  (npr. /mnt/iss/tmp/images)"); ?>: <input name="dir" type="text" value="<? echo realpath("doc/filled"); ?>" disabled /></p>
+	<p><? echo T_("Folder na serveru  (npr. /mnt/iss/tmp/images)"); ?>: <input name="dir" type="text" value="<? echo realpath("doc/filled"); ?>" /></p>
 	<p><input name='process' class="submit" id='process' type="submit" value="<? echo T_("Pogledaj u folderu: browser prozor mora ostati otvoren"); ?>" /></p>
 	<p><input name='watch' class="submit" id='watch' type="submit" value="<? echo T_("Provjeri folder u pozadini (preporučeno)"); ?>" /></p>
 	</form>
@@ -213,5 +216,16 @@ else
         }
 
 }
+
+}
+else
+	{
+		print "<h1>Nemate pravo pristupa. Logujte se kao operator</h1>";
+	}
+	}
+	else
+	{
+		header("Location:../index.php");
+	}
 xhtml_foot();
 ?>

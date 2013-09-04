@@ -38,9 +38,9 @@ if (isset($_POST['subject']))
 	$subject = $db->qstr($_POST['subject'],get_magic_quotes_gpc());
 	if (!empty($_POST['subject']))
 	{
-		$sql = "INSERT INTO subjects
-			(`id` ,`name` ,`qid`)
-			VALUES (NULL , $subject, NULL);";
+		$sql = "INSERT INTO sub
+			(`id` ,`name`)
+			VALUES (NULL , $subject);";
 	
 		if ($db->Execute($sql))
 		{

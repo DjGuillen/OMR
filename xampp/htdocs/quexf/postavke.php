@@ -1,9 +1,12 @@
 <?php
-    session_start();
+  include("../session.php");
+	session_start();
 	if(isset($_SESSION['username']))
 	{
-	$username=$_SESSION['username'];	
-	}
+		$_username=$_SESSION['username'];
+		session_validate();
+	if(isset($_SESSION['type'])  && $_SESSION['type'] == "operator")
+	{
 
 
 include_once("config.inc.php");
@@ -13,7 +16,7 @@ include("functions/functions.xhtml.php");
 				
 global $db;
 
-$info = $db->GetRow("select * from users where username = '".mysql_real_escape_string($username)."';");
+$info = $db->GetRow("select * from users where username = '".mysql_real_escape_string($_username)."';");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -116,7 +119,7 @@ td code{
 <body>
        <?php
 
-		show_header_operator($username);
+		show_header_operator($_username);
 		if(isset($_GET['mijenjajuser']))
 		{
 			$id = $_GET['mijenjajuser'];
@@ -209,7 +212,7 @@ td code{
 	?>
 	<div id="container">
 	<p class="p1">Korisničke postavke</p>
-	<p class="p2">Postavke za: <?php print $username;?></p>
+	<p class="p2">Postavke za: <?php print $_username;?></p>
 	<div id="prikaz">
 	<hr>
 	<table>
@@ -232,6 +235,16 @@ td code{
 	</div>
 <?php
 }
+}
+else
+	{
+		print "<h1>Nemate pravo pristupa. Logujte se kao operator</h1>";
+	}
+	}
+	else
+	{
+		header("Location:../index.php");
+	}
 ?>
 
 
